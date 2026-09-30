@@ -4,18 +4,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>RRB Group D Practice Sets 2026 | Study With Deepak Sir</title>
+<title>RRB Group D Practice Questions 2026 | Study With Deepak Sir</title>
 
 <meta name="description"
-content="Free RRB Group D practice questions for Maths, Reasoning, General Science and General Awareness. Practice online with timer, answers, explanations and score.">
+content="Free RRB Group D practice questions, mock tests and daily questions for Maths, Reasoning, General Science and General Awareness.">
 
 <meta name="keywords"
-content="RRB Group D practice set, RRB Group D mock test, RRB Group D questions, railway group D practice, RRB Group D maths, RRB Group D reasoning">
+content="RRB Group D practice questions, RRB Group D mock test, railway group D questions, RRB Group D maths, RRB Group D reasoning">
 
 <meta name="robots" content="index,follow">
-<meta name="author" content="Study With Deepak Sir">
+
+<meta property="og:title"
+content="RRB Group D Practice | Study With Deepak Sir">
+
+<meta property="og:description"
+content="Free RRB Group D practice questions and mock tests.">
 
 <style>
+
 *{
 box-sizing:border-box;
 margin:0;
@@ -31,9 +37,9 @@ line-height:1.55;
 
 header{
 background:linear-gradient(135deg,#172554,#2563eb);
-color:#fff;
-padding:18px 14px 28px;
+color:white;
 text-align:center;
+padding:18px 14px 26px;
 }
 
 .logo{
@@ -44,13 +50,31 @@ font-weight:800;
 .tagline{
 font-size:13px;
 opacity:.9;
-margin-top:3px;
+}
+
+.topbar{
+max-width:1050px;
+margin:12px auto 0;
+padding:0 12px;
+display:flex;
+justify-content:flex-end;
+gap:8px;
+}
+
+.small-btn{
+border:0;
+border-radius:9px;
+padding:8px 11px;
+cursor:pointer;
+font-weight:700;
+background:white;
+color:#172033;
 }
 
 .hero{
-max-width:1000px;
+max-width:1050px;
 margin:auto;
-padding:26px 14px 14px;
+padding:25px 14px 15px;
 text-align:center;
 }
 
@@ -63,30 +87,40 @@ margin-bottom:8px;
 color:#526074;
 }
 
-.controls{
-max-width:1000px;
-margin:12px auto;
+.tools{
+max-width:1050px;
+margin:10px auto;
 padding:0 12px;
+}
+
+.search{
+width:100%;
+padding:14px;
+border:1px solid #d8e0ea;
+border-radius:12px;
+font-size:16px;
+background:white;
+margin-bottom:10px;
 }
 
 .toolbar{
 display:flex;
-gap:9px;
+gap:8px;
 flex-wrap:wrap;
 }
 
 select,
-button{
+.btn{
 font:inherit;
 }
 
 select{
 flex:1;
-min-width:180px;
+min-width:170px;
 padding:12px;
-border-radius:10px;
 border:1px solid #d8e0ea;
-background:#fff;
+border-radius:10px;
+background:white;
 }
 
 .btn{
@@ -94,7 +128,7 @@ border:0;
 border-radius:10px;
 padding:12px 15px;
 background:#2563eb;
-color:#fff;
+color:white;
 font-weight:700;
 cursor:pointer;
 }
@@ -104,15 +138,15 @@ background:#e5e7eb;
 color:#172033;
 }
 
-.btn.danger{
-background:#dc2626;
+.btn.green{
+background:#16a34a;
 }
 
 .card{
-max-width:1000px;
+max-width:1050px;
 margin:18px auto;
 padding:20px;
-background:#fff;
+background:white;
 border-radius:18px;
 box-shadow:0 5px 22px rgba(0,0,0,.07);
 }
@@ -121,7 +155,6 @@ box-shadow:0 5px 22px rgba(0,0,0,.07);
 display:grid;
 grid-template-columns:repeat(5,1fr);
 gap:8px;
-margin-bottom:15px;
 }
 
 .stat{
@@ -146,7 +179,7 @@ color:#1d4ed8;
 text-align:center;
 font-weight:800;
 font-size:20px;
-margin:8px 0 14px;
+margin:14px 0;
 color:#b91c1c;
 }
 
@@ -168,11 +201,10 @@ transition:.2s;
 .meta{
 display:flex;
 justify-content:space-between;
-gap:10px;
+gap:8px;
 flex-wrap:wrap;
 font-size:13px;
 font-weight:700;
-margin-bottom:10px;
 }
 
 .badge{
@@ -185,7 +217,7 @@ border-radius:20px;
 .question{
 font-size:20px;
 font-weight:700;
-margin:12px 0 17px;
+margin:15px 0;
 }
 
 .option{
@@ -194,11 +226,11 @@ width:100%;
 padding:13px;
 margin:8px 0;
 border:2px solid #e5e7eb;
-background:#fff;
+background:white;
 border-radius:11px;
 text-align:left;
-cursor:pointer;
 font-size:16px;
+cursor:pointer;
 }
 
 .option:hover{
@@ -234,7 +266,7 @@ border-radius:8px;
 .actions{
 display:flex;
 gap:9px;
-margin-top:17px;
+margin-top:18px;
 }
 
 .actions button{
@@ -250,16 +282,16 @@ margin-top:18px;
 
 .qnum{
 padding:7px 2px;
-border-radius:7px;
 border:1px solid #d7dee8;
-background:#fff;
-font-size:12px;
+background:white;
+border-radius:7px;
 cursor:pointer;
+font-size:12px;
 }
 
 .qnum.current{
 background:#2563eb;
-color:#fff;
+color:white;
 }
 
 .qnum.done{
@@ -273,42 +305,73 @@ text-align:center;
 }
 
 .big-score{
-font-size:48px;
+font-size:50px;
 font-weight:900;
 color:#2563eb;
 margin:10px;
-}
-
-.result-box{
-background:#f8fafc;
-border-radius:14px;
-padding:18px;
-margin:15px 0;
 }
 
 .result-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:10px;
+margin:18px 0;
 }
 
-.result-item strong{
+.result-box{
+background:#f8fafc;
+padding:15px;
+border-radius:12px;
+}
+
+.result-box strong{
 display:block;
-font-size:24px;
+font-size:25px;
 color:#1d4ed8;
 }
 
+.daily{
+max-width:1050px;
+margin:20px auto;
+padding:0 12px;
+}
+
+.daily-card{
+background:white;
+padding:20px;
+border-radius:16px;
+box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+.daily-card h2{
+color:#172554;
+margin-bottom:8px;
+}
+
+.daily-question{
+font-size:18px;
+font-weight:700;
+margin:12px 0;
+}
+
+.daily-answer{
+display:none;
+padding:12px;
+background:#ecfdf5;
+border-radius:9px;
+color:#166534;
+}
+
 .info{
-max-width:1000px;
+max-width:1050px;
 margin:20px auto;
 padding:0 12px;
 }
 
 .info-card{
-background:#fff;
+background:white;
 padding:22px;
 border-radius:16px;
-box-shadow:0 4px 15px rgba(0,0,0,.05);
 }
 
 .info-card h2{
@@ -317,29 +380,13 @@ margin-bottom:8px;
 }
 
 .info-card h3{
-margin-top:17px;
+margin-top:18px;
 margin-bottom:5px;
 }
 
 .info-card p{
 color:#4b5563;
 margin-bottom:10px;
-}
-
-.set-links{
-display:flex;
-gap:8px;
-flex-wrap:wrap;
-margin-top:12px;
-}
-
-.set-link{
-text-decoration:none;
-background:#eff6ff;
-color:#1d4ed8;
-padding:9px 12px;
-border-radius:8px;
-font-weight:700;
 }
 
 footer{
@@ -349,6 +396,10 @@ text-align:center;
 padding:25px 14px;
 margin-top:25px;
 font-size:13px;
+}
+
+.hidden{
+display:none!important;
 }
 
 @media(max-width:700px){
@@ -373,19 +424,12 @@ font-size:18px;
 grid-template-columns:repeat(8,1fr);
 }
 
-.actions{
-flex-direction:column;
-}
-
 .result-grid{
 grid-template-columns:1fr;
 }
-}
 
-@media(max-width:430px){
-
-.question-grid{
-grid-template-columns:repeat(6,1fr);
+.actions{
+flex-direction:column;
 }
 
 .toolbar{
@@ -396,6 +440,7 @@ select,
 .toolbar .btn{
 width:100%;
 }
+
 }
 </style>
 </head>
@@ -403,23 +448,50 @@ width:100%;
 <body>
 
 <header>
-<div class="logo">📚 Study With Deepak Sir</div>
-<div class="tagline">Free Competitive Exam Preparation</div>
+
+<div class="logo">
+📚 Study With Deepak Sir
+</div>
+
+<div class="tagline">
+Free Competitive Exam Preparation
+</div>
+
 </header>
+
+<div class="topbar">
+
+<button class="small-btn" onclick="toggleLanguage()">
+বাংলা / English
+</button>
+
+<button class="small-btn" onclick="showDaily()">
+📅 Daily Question
+</button>
+
+</div>
 
 <section class="hero">
 
 <h1 id="pageTitle">
-🚆 RRB Group D Practice Sets
+🚆 RRB Group D Practice Questions
 </h1>
 
 <p id="pageSubtitle">
-Practice Maths, Reasoning, General Science and General Awareness online.
+Free Maths, Reasoning, General Science and General Awareness practice.
 </p>
 
 </section>
 
-<section class="controls">
+<section class="tools">
+
+<input
+id="searchBox"
+class="search"
+type="search"
+placeholder="🔎 Search questions..."
+oninput="searchQuestions()"
+>
 
 <div class="toolbar">
 
@@ -433,12 +505,16 @@ Practice Maths, Reasoning, General Science and General Awareness online.
 
 <select id="setSelect"></select>
 
-<button class="btn" id="randomBtn">
+<button class="btn" onclick="startRandom()">
 🎲 Random Practice
 </button>
 
-<button class="btn secondary" id="timerBtn">
-⏱ Timer: ON
+<button class="btn green" onclick="startDaily()">
+📅 Daily Question
+</button>
+
+<button class="btn secondary" onclick="toggleTimer()">
+⏱ Timer ON
 </button>
 
 </div>
@@ -506,11 +582,13 @@ Question
 
 <div class="actions">
 
-<button class="btn secondary" id="previousBtn">
+<button class="btn secondary"
+onclick="previousQuestion()">
 ← Previous
 </button>
 
-<button class="btn" id="nextBtn">
+<button class="btn"
+onclick="nextQuestion()">
 Next →
 </button>
 
@@ -528,108 +606,119 @@ Next →
 0%
 </div>
 
-<div class="result-box">
-
 <div class="result-grid">
 
-<div class="result-item">
+<div class="result-box">
 Correct
 <strong id="finalCorrect">0</strong>
 </div>
 
-<div class="result-item">
+<div class="result-box">
 Wrong
 <strong id="finalWrong">0</strong>
 </div>
 
-<div class="result-item">
+<div class="result-box">
 Accuracy
 <strong id="finalAccuracy">0%</strong>
 </div>
 
 </div>
 
-<p id="resultDetails" style="margin-top:15px"></p>
+<p id="resultDetails"></p>
 
-</div>
+<br>
 
-<button class="btn" id="restartBtn">
+<button class="btn"
+onclick="restartQuiz()">
 🔄 Restart
 </button>
 
-<button class="btn secondary" id="shareBtn">
-📤 Share Result
+<button class="btn secondary"
+onclick="shareResult()">
+📤 Share
 </button>
 
 </div>
 
 </main>
 
+<section class="daily" id="dailySection">
+
+<div class="daily-card">
+
+<h2>
+📅 Daily RRB Group D Question
+</h2>
+
+<p>
+Practice one question every day.
+</p>
+
+<div class="daily-question"
+id="dailyQuestion">
+Loading...
+</div>
+
+<button class="btn"
+onclick="showDailyAnswer()">
+Show Answer
+</button>
+
+<div class="daily-answer"
+id="dailyAnswer">
+</div>
+
+</div>
+
+</section>
+
 <section class="info">
 
 <div class="info-card">
 
-<h2 id="seoHeading">
-RRB Group D Practice Questions
+<h2>
+RRB Group D Preparation
 </h2>
 
 <p>
-Welcome to <strong>Study With Deepak Sir</strong>.
-This free practice tool is designed for students preparing for
+Study With Deepak Sir provides free online practice for
 Railway and other competitive examinations.
 </p>
 
-<h3>📖 Subjects</h3>
+<h3>🧮 Mathematics</h3>
 
 <p>
-Practice Mathematics, Reasoning, General Science and General Awareness.
-Select a subject and practice set above.
+Practise percentage, average, ratio, profit and loss,
+LCM, HCF, speed and distance and other arithmetic topics.
 </p>
 
-<h3>⏱ Practice With Timer</h3>
+<h3>🧠 Reasoning</h3>
 
 <p>
-Timer mode helps you practise answering questions within a fixed
-period. You can turn the timer off whenever you want.
+Practise number series, letter series, coding-decoding,
+classification and logical reasoning questions.
 </p>
 
-<h3>🎯 How to use this practice tool</h3>
+<h3>🔬 General Science</h3>
 
 <p>
-Choose a subject, select a practice set and answer each question.
-After answering, review the explanation and move to the next question.
-At the end you will see your score and accuracy.
+Practise basic Physics, Chemistry and Biology questions.
 </p>
 
-<h3>📚 Practice Sets</h3>
+<h3>🌍 General Awareness</h3>
 
-<div class="set-links">
+<p>
+Practise Indian geography, history, polity, culture and
+general knowledge questions.
+</p>
 
-<a class="set-link" href="?subject=Maths&set=1">
-Maths Set 1
-</a>
+<h3>🔎 Search</h3>
 
-<a class="set-link" href="?subject=Maths&set=2">
-Maths Set 2
-</a>
-
-<a class="set-link" href="?subject=Maths&set=3">
-Maths Set 3
-</a>
-
-<a class="set-link" href="?subject=Reasoning&set=1">
-Reasoning Set 1
-</a>
-
-<a class="set-link" href="?subject=Science&set=1">
-Science Set 1
-</a>
-
-<a class="set-link" href="?subject=General%20Awareness&set=1">
-General Awareness Set 1
-</a>
-
-</div>
+<p>
+Use the search box above to find questions containing a
+particular word or topic.
+</p>
 
 </div>
 
@@ -637,10 +726,12 @@ General Awareness Set 1
 
 <footer>
 
-<p>© 2026 Study With Deepak Sir</p>
+<p>
+© 2026 Study With Deepak Sir
+</p>
 
 <p>
-Free Competitive Exam Practice • Learn • Practise • Improve
+RRB Group D Practice • Learn • Practise • Improve
 </p>
 
 </footer>
@@ -649,18 +740,35 @@ Free Competitive Exam Practice • Learn • Practise • Improve
 
 <script>
 
-const questions =
+/* =========================================
+   V4 PART 1 QUIZ ENGINE
+========================================= */
+
+const ALL_QUESTIONS =
 Array.isArray(window.RRB_QUESTIONS)
 ? window.RRB_QUESTIONS
 : [];
 
 let currentQuestions = [];
+
 let currentIndex = 0;
+
 let answers = [];
+
 let timerEnabled = true;
+
 let secondsLeft = 600;
+
 let timerInterval = null;
+
 let randomMode = false;
+
+let dailyQuestion = null;
+
+
+/* =========================================
+   ELEMENTS
+========================================= */
 
 const subjectSelect =
 document.getElementById("subjectSelect");
@@ -668,26 +776,32 @@ document.getElementById("subjectSelect");
 const setSelect =
 document.getElementById("setSelect");
 
-function getSets(subject){
+const searchBox =
+document.getElementById("searchBox");
 
-const list =
-subject === "All"
-? questions
-: questions.filter(q=>q.subject===subject);
 
-return [...new Set(
-list.map(q=>Number(q.set||1))
-)].sort((a,b)=>a-b);
-
-}
+/* =========================================
+   SETS
+========================================= */
 
 function populateSets(){
 
 const subject =
 subjectSelect.value;
 
+const filtered =
+subject==="All"
+?ALL_QUESTIONS
+:ALL_QUESTIONS.filter(
+q=>q.subject===subject
+);
+
 const sets =
-getSets(subject);
+[
+...new Set(
+filtered.map(q=>Number(q.set||1))
+)
+].sort((a,b)=>a-b);
 
 setSelect.innerHTML="";
 
@@ -697,6 +811,7 @@ const option =
 document.createElement("option");
 
 option.value=set;
+
 option.textContent=
 "Practice Set "+set;
 
@@ -706,7 +821,12 @@ setSelect.appendChild(option);
 
 }
 
-function loadFromURL(){
+
+/* =========================================
+   URL SUPPORT
+========================================= */
+
+function loadURL(){
 
 const params =
 new URLSearchParams(location.search);
@@ -717,25 +837,42 @@ params.get("subject");
 const set =
 params.get("set");
 
-if(subject &&
+if(subject){
+
+const valid =
 [...subjectSelect.options]
-.some(o=>o.value===subject)){
+.some(o=>o.value===subject);
+
+if(valid){
 
 subjectSelect.value=subject;
 
 }
 
+}
+
 populateSets();
 
-if(set &&
+if(set){
+
+const valid =
 [...setSelect.options]
-.some(o=>o.value===set)){
+.some(o=>o.value===set);
+
+if(valid){
 
 setSelect.value=set;
 
 }
 
 }
+
+}
+
+
+/* =========================================
+   SEO
+========================================= */
 
 function updateSEO(){
 
@@ -746,41 +883,38 @@ const set =
 setSelect.value;
 
 let title =
-"RRB Group D Practice Sets 2026 | Study With Deepak Sir";
+"RRB Group D Practice Questions 2026 | Study With Deepak Sir";
 
 let heading =
-"RRB Group D Practice Questions";
+"🚆 RRB Group D Practice Questions";
 
 if(subject!=="All"){
 
-heading =
-`RRB Group D ${subject} Practice Set ${set}`;
-
 title =
-`${heading} 2026 | Study With Deepak Sir`;
-
-}else if(set){
+`RRB Group D ${subject} Practice Set ${set} | Study With Deepak Sir`;
 
 heading =
-`RRB Group D Practice Set ${set}`;
+`🚆 RRB Group D ${subject} Practice Set ${set}`;
 
 }
 
 document.title=title;
 
 document.getElementById("pageTitle")
-.textContent="🚆 "+heading;
-
-document.getElementById("seoHeading")
 .textContent=heading;
 
 document.getElementById("pageSubtitle")
-.textContent =
+.textContent=
 subject==="All"
-? "Free RRB Group D practice questions with answers, explanations and timed practice."
-: `Practice ${subject} questions with answers, explanations and timed practice.`;
+?"Free RRB Group D practice questions, mock tests and daily questions."
+:`Free ${subject} practice questions with answers and explanations.`;
 
 }
+
+
+/* =========================================
+   BUILD SET
+========================================= */
 
 function buildSet(){
 
@@ -793,9 +927,10 @@ const set =
 Number(setSelect.value);
 
 currentQuestions =
-questions.filter(q=>
+ALL_QUESTIONS.filter(q=>
 (subject==="All" || q.subject===subject)
-&& Number(q.set||1)===set
+&&
+Number(q.set||1)===set
 );
 
 startQuiz();
@@ -804,14 +939,20 @@ updateSEO();
 
 }
 
+
+/* =========================================
+   RANDOM
+========================================= */
+
 function startRandom(){
 
 const subject =
 subjectSelect.value;
 
 const pool =
-questions.filter(q=>
-subject==="All" || q.subject===subject
+ALL_QUESTIONS.filter(q=>
+subject==="All" ||
+q.subject===subject
 );
 
 currentQuestions =
@@ -825,7 +966,14 @@ startQuiz();
 
 }
 
+
+/* =========================================
+   START
+========================================= */
+
 function startQuiz(){
+
+clearInterval(timerInterval);
 
 currentIndex=0;
 
@@ -834,8 +982,6 @@ new Array(currentQuestions.length)
 .fill(null);
 
 secondsLeft=600;
-
-clearInterval(timerInterval);
 
 document.getElementById("quizArea")
 .style.display="block";
@@ -859,7 +1005,14 @@ document.getElementById("timerDisplay")
 
 renderQuestion();
 
+saveProgress();
+
 }
+
+
+/* =========================================
+   TIMER
+========================================= */
 
 function startTimer(){
 
@@ -867,7 +1020,8 @@ clearInterval(timerInterval);
 
 updateTimer();
 
-timerInterval=setInterval(()=>{
+timerInterval =
+setInterval(()=>{
 
 secondsLeft--;
 
@@ -887,33 +1041,39 @@ finishQuiz(true);
 
 function updateTimer(){
 
-const min =
+const minutes =
 Math.floor(secondsLeft/60);
 
-const sec =
+const seconds =
 secondsLeft%60;
 
-const text =
-String(min).padStart(2,"0")
+const value =
+String(minutes).padStart(2,"0")
 +
 ":"
 +
-String(sec).padStart(2,"0");
+String(seconds).padStart(2,"0");
 
 document.getElementById("timerDisplay")
-.textContent="⏱ "+text;
+.textContent="⏱ "+value;
 
 document.getElementById("timeStat")
-.textContent=text;
+.textContent=value;
 
 }
+
+
+/* =========================================
+   RENDER QUESTION
+========================================= */
 
 function renderQuestion(){
 
 if(!currentQuestions.length){
 
 document.getElementById("questionText")
-.textContent="No questions available.";
+.textContent=
+"No questions found.";
 
 return;
 
@@ -937,7 +1097,8 @@ document.getElementById("questionText")
 
 document.getElementById("progressBar")
 .style.width=
-((currentIndex+1)/currentQuestions.length*100)+"%";
+((currentIndex+1)/
+currentQuestions.length*100)+"%";
 
 const options =
 document.getElementById("options");
@@ -952,7 +1113,9 @@ document.createElement("button");
 button.className="option";
 
 button.textContent=
-String.fromCharCode(65+index)+". "+option;
+String.fromCharCode(65+index)
++". "
++option;
 
 button.onclick=()=>{
 answerQuestion(index);
@@ -962,11 +1125,20 @@ if(saved!==null){
 
 button.disabled=true;
 
-if(index===q.answer)
+if(index===q.answer){
+
 button.classList.add("correct");
 
-if(index===saved && saved!==q.answer)
+}
+
+if(
+index===saved &&
+saved!==q.answer
+){
+
 button.classList.add("wrong");
+
+}
 
 }
 
@@ -991,21 +1163,26 @@ explanation.style.display="none";
 
 }
 
-document.getElementById("nextBtn")
-.textContent=
-currentIndex===currentQuestions.length-1
-?"Finish →"
-:"Next →";
-
 updateStats();
+
 renderGrid();
+
+saveProgress();
 
 }
 
+
+/* =========================================
+   ANSWER
+========================================= */
+
 function answerQuestion(index){
 
-if(answers[currentIndex]!==null)
+if(answers[currentIndex]!==null){
+
 return;
+
+}
 
 answers[currentIndex]=index;
 
@@ -1013,18 +1190,29 @@ renderQuestion();
 
 }
 
+
+/* =========================================
+   NEXT
+========================================= */
+
 function nextQuestion(){
 
-if(answers[currentIndex]===null){
+if(
+answers[currentIndex]===null
+){
 
-alert("Please select an answer first.");
+alert(
+"Please select an answer first."
+);
 
 return;
 
 }
 
-if(currentIndex===
-currentQuestions.length-1){
+if(
+currentIndex===
+currentQuestions.length-1
+){
 
 finishQuiz(false);
 
@@ -1038,6 +1226,11 @@ renderQuestion();
 
 }
 
+
+/* =========================================
+   PREVIOUS
+========================================= */
+
 function previousQuestion(){
 
 if(currentIndex>0){
@@ -1049,6 +1242,11 @@ renderQuestion();
 }
 
 }
+
+
+/* =========================================
+   QUESTION GRID
+========================================= */
 
 function renderGrid(){
 
@@ -1066,15 +1264,22 @@ button.className="qnum";
 
 button.textContent=index+1;
 
-if(index===currentIndex)
+if(index===currentIndex){
+
 button.classList.add("current");
 
-if(answers[index]!==null)
+}
+
+if(answers[index]!==null){
+
 button.classList.add("done");
+
+}
 
 button.onclick=()=>{
 
 currentIndex=index;
+
 renderQuestion();
 
 };
@@ -1085,19 +1290,29 @@ grid.appendChild(button);
 
 }
 
+
+/* =========================================
+   STATS
+========================================= */
+
 function updateStats(){
 
 const attempted =
-answers.filter(a=>a!==null).length;
+answers.filter(
+a=>a!==null
+).length;
 
 const correct =
-answers.reduce((total,a,index)=>
+answers.reduce(
+(total,a,index)=>
 total+
 (
 a!==null &&
 a===currentQuestions[index].answer
 ?1:0
-),0);
+),
+0
+);
 
 const accuracy =
 attempted
@@ -1111,25 +1326,36 @@ document.getElementById("correctStat")
 .textContent=correct;
 
 document.getElementById("accuracyStat")
-.textContent=accuracy+"%";
+.textContent=
+accuracy+"%";
 
 }
+
+
+/* =========================================
+   FINISH
+========================================= */
 
 function finishQuiz(timeUp){
 
 clearInterval(timerInterval);
 
 const correct =
-answers.reduce((total,a,index)=>
+answers.reduce(
+(total,a,index)=>
 total+
 (
 a!==null &&
 a===currentQuestions[index].answer
 ?1:0
-),0);
+),
+0
+);
 
 const attempted =
-answers.filter(a=>a!==null).length;
+answers.filter(
+a=>a!==null
+).length;
 
 const wrong =
 attempted-correct;
@@ -1141,7 +1367,9 @@ attempted
 
 const percentage =
 currentQuestions.length
-?Math.round(correct/currentQuestions.length*100)
+?Math.round(
+correct/currentQuestions.length*100
+)
 :0;
 
 document.getElementById("quizArea")
@@ -1151,7 +1379,8 @@ document.getElementById("resultArea")
 .style.display="block";
 
 document.getElementById("finalScore")
-.textContent=percentage+"%";
+.textContent=
+percentage+"%";
 
 document.getElementById("finalCorrect")
 .textContent=correct;
@@ -1160,29 +1389,40 @@ document.getElementById("finalWrong")
 .textContent=wrong;
 
 document.getElementById("finalAccuracy")
-.textContent=accuracy+"%";
+.textContent=
+accuracy+"%";
 
 document.getElementById("resultDetails")
-.textContent =
+.textContent=
 timeUp
 ?`Time ended. You attempted ${attempted} of ${currentQuestions.length} questions.`
 :`You attempted ${attempted} of ${currentQuestions.length} questions.`;
 
 }
 
+
+/* =========================================
+   TIMER TOGGLE
+========================================= */
+
 function toggleTimer(){
 
 timerEnabled=!timerEnabled;
 
-document.getElementById("timerBtn")
-.textContent=
+const button =
+document.querySelector(
+'.toolbar .btn.secondary'
+);
+
+button.textContent =
 timerEnabled
-?"⏱ Timer: ON"
-:"⏱ Timer: OFF";
+?"⏱ Timer ON"
+:"⏱ Timer OFF";
 
 if(timerEnabled){
 
 secondsLeft=600;
+
 startTimer();
 
 }else{
@@ -1196,80 +1436,167 @@ document.getElementById("timerDisplay")
 
 }
 
-function shareResult(){
 
-const correct =
-answers.reduce((total,a,index)=>
-total+
+/* =========================================
+   SEARCH
+========================================= */
+
+function searchQuestions(){
+
+const term =
+searchBox.value
+.trim()
+.toLowerCase();
+
+if(!term){
+
+buildSet();
+
+return;
+
+}
+
+const subject =
+subjectSelect.value;
+
+const set =
+Number(setSelect.value);
+
+currentQuestions =
+ALL_QUESTIONS.filter(q=>
+
+(subject==="All" ||
+q.subject===subject)
+
+&&
+
+Number(q.set||1)===set
+
+&&
+
 (
-a!==null &&
-a===currentQuestions[index].answer
-?1:0
-),0);
+q.question.toLowerCase()
+.includes(term)
 
-const attempted =
-answers.filter(a=>a!==null).length;
+||
 
-const percentage =
-currentQuestions.length
-?Math.round(correct/currentQuestions.length*100)
-:0;
+q.explanation
+.toLowerCase()
+.includes(term)
 
-const text =
-`I scored ${correct}/${currentQuestions.length} (${percentage}%) in an RRB Group D practice set on Study With Deepak Sir.`;
+)
 
-if(navigator.share){
-
-navigator.share({
-title:"RRB Group D Practice Result",
-text:text,
-url:location.href
-}).catch(()=>{});
-
-}else{
-
-navigator.clipboard.writeText(
-text+" "+location.href
 );
 
-alert("Result copied.");
+randomMode=false;
+
+startQuiz();
 
 }
 
+
+/* =========================================
+   DAILY QUESTION
+========================================= */
+
+function getDailyQuestion(){
+
+if(!ALL_QUESTIONS.length)
+return null;
+
+const today =
+new Date();
+
+const key =
+today.getFullYear()*10000
++
+(today.getMonth()+1)*100
++
+today.getDate();
+
+const index =
+key % ALL_QUESTIONS.length;
+
+return ALL_QUESTIONS[index];
+
 }
 
-subjectSelect.onchange=()=>{
-populateSets();
-buildSet();
-};
+function showDaily(){
 
-setSelect.onchange=buildSet;
+document.getElementById("dailySection")
+.scrollIntoView({
+behavior:"smooth"
+});
 
-document.getElementById("randomBtn")
-.onclick=startRandom;
+}
 
-document.getElementById("timerBtn")
-.onclick=toggleTimer;
+function loadDaily(){
 
-document.getElementById("nextBtn")
-.onclick=nextQuestion;
+dailyQuestion=
+getDailyQuestion();
 
-document.getElementById("previousBtn")
-.onclick=previousQuestion;
+if(!dailyQuestion){
 
-document.getElementById("restartBtn")
-.onclick=()=>{
-buildSet();
-};
+return;
 
-document.getElementById("shareBtn")
-.onclick=shareResult;
+}
 
-loadFromURL();
+document.getElementById("dailyQuestion")
+.textContent=
+dailyQuestion.question;
 
-buildSet();
+document.getElementById("dailyAnswer")
+.innerHTML=
+"<strong>Answer:</strong> "
++
+dailyQuestion.options[
+dailyQuestion.answer
+]
++
+"<br><br>"
++
+"<strong>Explanation:</strong> "
++
+dailyQuestion.explanation;
 
-</script>
+}
 
-</body>
-    </html>
+function showDailyAnswer(){
+
+document.getElementById("dailyAnswer")
+.style.display="block";
+
+}
+
+function startDaily(){
+
+if(!dailyQuestion)
+loadDaily();
+
+currentQuestions=[dailyQuestion];
+
+startQuiz();
+
+}
+
+
+/* =========================================
+   LANGUAGE
+========================================= */
+
+function toggleLanguage(){
+
+const current =
+document.documentElement.lang;
+
+if(current==="en"){
+
+document.documentElement.lang="bn";
+
+document.getElementById("pageTitle")
+.textContent=
+"🚆 RRB Group D অনুশীলনী প্রশ্ন";
+
+document.getElementById("pageSubtitle")
+.textContent=
+"গণিত,
