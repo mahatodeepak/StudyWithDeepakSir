@@ -2,321 +2,400 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
 <title>RRB Group D Practice Sets 2026 | Study With Deepak Sir</title>
 
 <meta name="description"
-content="Free RRB Group D practice sets for Maths, Reasoning, General Science and General Awareness with answers and explanations.">
+content="Free RRB Group D practice questions for Maths, Reasoning, General Science and General Awareness. Practice online with timer, answers, explanations and score.">
 
 <meta name="keywords"
-content="RRB Group D practice set, RRB Group D questions, railway group D mock test, RRB Group D maths, RRB Group D reasoning">
+content="RRB Group D practice set, RRB Group D mock test, RRB Group D questions, railway group D practice, RRB Group D maths, RRB Group D reasoning">
 
-<meta name="author" content="Study With Deepak Sir">
 <meta name="robots" content="index,follow">
+<meta name="author" content="Study With Deepak Sir">
 
 <style>
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f4f7fb;
-    color:#172033;
-    line-height:1.55;
+font-family:Arial,Helvetica,sans-serif;
+background:#f3f6fb;
+color:#172033;
+line-height:1.55;
 }
 
 header{
-    background:linear-gradient(135deg,#172554,#2563eb);
-    color:white;
-    text-align:center;
-    padding:22px 15px 28px;
+background:linear-gradient(135deg,#172554,#2563eb);
+color:#fff;
+padding:18px 14px 28px;
+text-align:center;
 }
 
 .logo{
-    font-size:26px;
-    font-weight:800;
+font-size:25px;
+font-weight:800;
 }
 
 .tagline{
-    font-size:14px;
-    opacity:.9;
-    margin-top:4px;
+font-size:13px;
+opacity:.9;
+margin-top:3px;
 }
 
 .hero{
-    max-width:950px;
-    margin:auto;
-    padding:25px 15px 15px;
-    text-align:center;
+max-width:1000px;
+margin:auto;
+padding:26px 14px 14px;
+text-align:center;
 }
 
 .hero h1{
-    font-size:29px;
-    margin-bottom:8px;
+font-size:30px;
+margin-bottom:8px;
 }
 
 .hero p{
-    color:#526074;
+color:#526074;
 }
 
 .controls{
-    max-width:950px;
-    margin:15px auto;
-    padding:0 12px;
+max-width:1000px;
+margin:12px auto;
+padding:0 12px;
 }
 
 .toolbar{
-    display:flex;
-    gap:10px;
-    flex-wrap:wrap;
+display:flex;
+gap:9px;
+flex-wrap:wrap;
 }
 
 select,
-.btn{
-    border:0;
-    border-radius:10px;
-    padding:12px 14px;
-    font-size:15px;
+button{
+font:inherit;
 }
 
 select{
-    background:white;
-    border:1px solid #dbe2ea;
-    flex:1;
-    min-width:180px;
+flex:1;
+min-width:180px;
+padding:12px;
+border-radius:10px;
+border:1px solid #d8e0ea;
+background:#fff;
 }
 
 .btn{
-    background:#2563eb;
-    color:white;
-    font-weight:700;
-    cursor:pointer;
+border:0;
+border-radius:10px;
+padding:12px 15px;
+background:#2563eb;
+color:#fff;
+font-weight:700;
+cursor:pointer;
 }
 
 .btn.secondary{
-    background:#e5e7eb;
-    color:#172033;
+background:#e5e7eb;
+color:#172033;
+}
+
+.btn.danger{
+background:#dc2626;
 }
 
 .card{
-    max-width:950px;
-    margin:0 auto 20px;
-    background:white;
-    border-radius:18px;
-    padding:20px;
-    box-shadow:0 5px 20px rgba(0,0,0,.07);
+max-width:1000px;
+margin:18px auto;
+padding:20px;
+background:#fff;
+border-radius:18px;
+box-shadow:0 5px 22px rgba(0,0,0,.07);
 }
 
 .stats{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:10px;
-    margin-bottom:18px;
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:8px;
+margin-bottom:15px;
 }
 
 .stat{
-    background:#f8fafc;
-    border-radius:12px;
-    padding:12px;
-    text-align:center;
+background:#f7f9fc;
+padding:10px 5px;
+border-radius:10px;
+text-align:center;
+}
+
+.stat span{
+display:block;
+font-size:12px;
+color:#64748b;
 }
 
 .stat strong{
-    display:block;
-    font-size:20px;
-    color:#1d4ed8;
+font-size:19px;
+color:#1d4ed8;
+}
+
+.timer{
+text-align:center;
+font-weight:800;
+font-size:20px;
+margin:8px 0 14px;
+color:#b91c1c;
 }
 
 .progress{
-    height:8px;
-    background:#e5e7eb;
-    border-radius:20px;
-    overflow:hidden;
-    margin-bottom:20px;
+height:8px;
+background:#e5e7eb;
+border-radius:20px;
+overflow:hidden;
+margin-bottom:18px;
 }
 
 .progress-bar{
-    height:100%;
-    width:0;
-    background:#2563eb;
-    transition:.25s;
+height:100%;
+width:0;
+background:#2563eb;
+transition:.2s;
 }
 
 .meta{
-    display:flex;
-    justify-content:space-between;
-    gap:8px;
-    flex-wrap:wrap;
-    font-size:13px;
-    font-weight:700;
-    margin-bottom:10px;
+display:flex;
+justify-content:space-between;
+gap:10px;
+flex-wrap:wrap;
+font-size:13px;
+font-weight:700;
+margin-bottom:10px;
 }
 
 .badge{
-    display:inline-block;
-    background:#e0ecff;
-    color:#1d4ed8;
-    border-radius:20px;
-    padding:5px 10px;
+background:#e0ecff;
+color:#1d4ed8;
+padding:5px 10px;
+border-radius:20px;
 }
 
 .question{
-    font-size:20px;
-    font-weight:700;
-    margin:12px 0 18px;
+font-size:20px;
+font-weight:700;
+margin:12px 0 17px;
 }
 
 .option{
-    width:100%;
-    border:2px solid #e5e7eb;
-    background:white;
-    padding:13px;
-    border-radius:11px;
-    margin:8px 0;
-    text-align:left;
-    font-size:16px;
-    cursor:pointer;
+display:block;
+width:100%;
+padding:13px;
+margin:8px 0;
+border:2px solid #e5e7eb;
+background:#fff;
+border-radius:11px;
+text-align:left;
+cursor:pointer;
+font-size:16px;
 }
 
 .option:hover{
-    border-color:#2563eb;
-    background:#f5f9ff;
+border-color:#2563eb;
+background:#f5f9ff;
 }
 
 .option.correct{
-    border-color:#16a34a;
-    background:#ecfdf5;
-    color:#166534;
+border-color:#16a34a;
+background:#ecfdf5;
+color:#166534;
 }
 
 .option.wrong{
-    border-color:#dc2626;
-    background:#fef2f2;
-    color:#991b1b;
+border-color:#dc2626;
+background:#fef2f2;
+color:#991b1b;
+}
+
+.option:disabled{
+cursor:default;
 }
 
 .explanation{
-    display:none;
-    margin-top:16px;
-    padding:14px;
-    background:#f8fafc;
-    border-left:4px solid #2563eb;
-    border-radius:8px;
+display:none;
+margin-top:15px;
+padding:14px;
+background:#f8fafc;
+border-left:4px solid #2563eb;
+border-radius:8px;
 }
 
 .actions{
-    display:flex;
-    gap:10px;
-    margin-top:18px;
+display:flex;
+gap:9px;
+margin-top:17px;
 }
 
 .actions button{
-    flex:1;
-}
-
-.next{
-    display:none;
+flex:1;
 }
 
 .question-grid{
-    display:grid;
-    grid-template-columns:repeat(10,1fr);
-    gap:6px;
-    margin-top:18px;
+display:grid;
+grid-template-columns:repeat(10,1fr);
+gap:6px;
+margin-top:18px;
 }
 
 .qnum{
-    border:1px solid #dbe2ea;
-    background:white;
-    border-radius:7px;
-    padding:7px 2px;
-    cursor:pointer;
-    font-size:12px;
+padding:7px 2px;
+border-radius:7px;
+border:1px solid #d7dee8;
+background:#fff;
+font-size:12px;
+cursor:pointer;
 }
 
 .qnum.current{
-    background:#2563eb;
-    color:white;
+background:#2563eb;
+color:#fff;
 }
 
 .qnum.done{
-    background:#dcfce7;
-    color:#166534;
+background:#dcfce7;
+color:#166534;
 }
 
 .result{
-    text-align:center;
-    display:none;
+display:none;
+text-align:center;
 }
 
-.score{
-    font-size:44px;
-    font-weight:800;
-    color:#2563eb;
-    margin:10px;
+.big-score{
+font-size:48px;
+font-weight:900;
+color:#2563eb;
+margin:10px;
 }
 
-.result-actions{
-    margin-top:18px;
+.result-box{
+background:#f8fafc;
+border-radius:14px;
+padding:18px;
+margin:15px 0;
+}
+
+.result-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+}
+
+.result-item strong{
+display:block;
+font-size:24px;
+color:#1d4ed8;
 }
 
 .info{
-    max-width:950px;
-    margin:20px auto;
-    padding:0 12px;
+max-width:1000px;
+margin:20px auto;
+padding:0 12px;
 }
 
 .info-card{
-    background:white;
-    padding:22px;
-    border-radius:16px;
-    box-shadow:0 4px 15px rgba(0,0,0,.05);
+background:#fff;
+padding:22px;
+border-radius:16px;
+box-shadow:0 4px 15px rgba(0,0,0,.05);
 }
 
 .info-card h2{
-    color:#172554;
-    margin-bottom:8px;
+color:#172554;
+margin-bottom:8px;
+}
+
+.info-card h3{
+margin-top:17px;
+margin-bottom:5px;
 }
 
 .info-card p{
-    color:#4b5563;
-    margin-bottom:12px;
+color:#4b5563;
+margin-bottom:10px;
+}
+
+.set-links{
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+margin-top:12px;
+}
+
+.set-link{
+text-decoration:none;
+background:#eff6ff;
+color:#1d4ed8;
+padding:9px 12px;
+border-radius:8px;
+font-weight:700;
 }
 
 footer{
-    background:#111827;
-    color:#d1d5db;
-    text-align:center;
-    padding:25px 15px;
-    margin-top:25px;
-    font-size:14px;
+background:#111827;
+color:#d1d5db;
+text-align:center;
+padding:25px 14px;
+margin-top:25px;
+font-size:13px;
 }
 
-@media(max-width:650px){
+@media(max-width:700px){
 
-    .stats{
-        grid-template-columns:repeat(2,1fr);
-    }
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
 
-    .hero h1{
-        font-size:24px;
-    }
+.stats .stat:last-child{
+grid-column:span 2;
+}
 
-    .question{
-        font-size:18px;
-    }
+.hero h1{
+font-size:24px;
+}
 
-    .question-grid{
-        grid-template-columns:repeat(8,1fr);
-    }
+.question{
+font-size:18px;
+}
 
-    .actions{
-        flex-direction:column;
-    }
+.question-grid{
+grid-template-columns:repeat(8,1fr);
+}
+
+.actions{
+flex-direction:column;
+}
+
+.result-grid{
+grid-template-columns:1fr;
+}
+}
+
+@media(max-width:430px){
+
+.question-grid{
+grid-template-columns:repeat(6,1fr);
+}
+
+.toolbar{
+flex-direction:column;
+}
+
+select,
+.toolbar .btn{
+width:100%;
+}
 }
 </style>
 </head>
@@ -324,982 +403,873 @@ footer{
 <body>
 
 <header>
-
-    <div class="logo">
-        📚 Study With Deepak Sir
-    </div>
-
-    <div class="tagline">
-        Free Competitive Exam Preparation
-    </div>
-
+<div class="logo">📚 Study With Deepak Sir</div>
+<div class="tagline">Free Competitive Exam Preparation</div>
 </header>
-
 
 <section class="hero">
 
-    <h1>
-        🚆 RRB Group D Practice Sets
-    </h1>
+<h1 id="pageTitle">
+🚆 RRB Group D Practice Sets
+</h1>
 
-    <p>
-        Free subject-wise practice questions with instant answers and explanations.
-    </p>
+<p id="pageSubtitle">
+Practice Maths, Reasoning, General Science and General Awareness online.
+</p>
 
 </section>
-
 
 <section class="controls">
 
-    <div class="toolbar">
+<div class="toolbar">
 
-        <select id="subjectSelect" onchange="changeSubject()">
+<select id="subjectSelect">
+<option value="All">📚 All Subjects</option>
+<option value="Maths">🧮 Maths</option>
+<option value="Reasoning">🧠 Reasoning</option>
+<option value="Science">🔬 General Science</option>
+<option value="General Awareness">🌍 General Awareness</option>
+</select>
 
-            <option value="All">
-                All Subjects
-            </option>
+<select id="setSelect"></select>
 
-            <option value="Maths">
-                🧮 Maths
-            </option>
+<button class="btn" id="randomBtn">
+🎲 Random Practice
+</button>
 
-            <option value="Reasoning">
-                🧠 Reasoning
-            </option>
+<button class="btn secondary" id="timerBtn">
+⏱ Timer: ON
+</button>
 
-            <option value="Science">
-                🔬 General Science
-            </option>
-
-            <option value="General Awareness">
-                🌍 General Awareness
-            </option>
-
-        </select>
-
-
-        <select id="setSelect" onchange="changeSet()">
-        </select>
-
-
-        <button
-            class="btn"
-            onclick="startRandom()">
-
-            🎲 Random Practice
-
-        </button>
-
-    </div>
+</div>
 
 </section>
 
+<main class="card">
 
-<main class="card" id="quizCard">
+<div class="stats">
 
+<div class="stat">
+<span>Questions</span>
+<strong id="totalStat">0</strong>
+</div>
 
-    <div class="stats">
+<div class="stat">
+<span>Attempted</span>
+<strong id="attemptedStat">0</strong>
+</div>
 
-        <div class="stat">
+<div class="stat">
+<span>Correct</span>
+<strong id="correctStat">0</strong>
+</div>
 
-            <span>
-                Questions
-            </span>
+<div class="stat">
+<span>Accuracy</span>
+<strong id="accuracyStat">0%</strong>
+</div>
 
-            <strong id="totalStat">
-                0
-            </strong>
+<div class="stat">
+<span>Time</span>
+<strong id="timeStat">10:00</strong>
+</div>
 
-        </div>
+</div>
 
+<div class="timer" id="timerDisplay">
+⏱ 10:00
+</div>
 
-        <div class="stat">
+<div class="progress">
+<div class="progress-bar" id="progressBar"></div>
+</div>
 
-            <span>
-                Answered
-            </span>
+<div id="quizArea">
 
-            <strong id="answeredStat">
-                0
-            </strong>
+<div class="meta">
 
-        </div>
+<span class="badge" id="subjectBadge">
+RRB Group D
+</span>
 
+<span id="questionCounter">
+Question
+</span>
 
-        <div class="stat">
+</div>
 
-            <span>
-                Correct
-            </span>
+<div class="question" id="questionText"></div>
 
-            <strong id="correctStat">
-                0
-            </strong>
+<div id="options"></div>
 
-        </div>
+<div class="explanation" id="explanation"></div>
 
+<div class="actions">
 
-        <div class="stat">
+<button class="btn secondary" id="previousBtn">
+← Previous
+</button>
 
-            <span>
-                Score
-            </span>
+<button class="btn" id="nextBtn">
+Next →
+</button>
 
-            <strong id="scoreStat">
-                0%
-            </strong>
+</div>
 
-        </div>
+<div class="question-grid" id="questionGrid"></div>
 
-    </div>
+</div>
 
+<div class="result" id="resultArea">
 
-    <div class="progress">
+<h2>🎉 Practice Completed</h2>
 
-        <div
-            class="progress-bar"
-            id="progressBar">
-        </div>
+<div class="big-score" id="finalScore">
+0%
+</div>
 
-    </div>
+<div class="result-box">
 
+<div class="result-grid">
 
-    <div id="quizArea">
+<div class="result-item">
+Correct
+<strong id="finalCorrect">0</strong>
+</div>
 
+<div class="result-item">
+Wrong
+<strong id="finalWrong">0</strong>
+</div>
 
-        <div class="meta">
+<div class="result-item">
+Accuracy
+<strong id="finalAccuracy">0%</strong>
+</div>
 
-            <span
-                class="badge"
-                id="subjectBadge">
-                Maths
-            </span>
+</div>
 
-            <span id="questionCounter">
-                Question 1
-            </span>
+<p id="resultDetails" style="margin-top:15px"></p>
 
-        </div>
+</div>
 
+<button class="btn" id="restartBtn">
+🔄 Restart
+</button>
 
-        <div
-            class="question"
-            id="questionText">
-        </div>
+<button class="btn secondary" id="shareBtn">
+📤 Share Result
+</button>
 
-
-        <div id="options">
-        </div>
-
-
-        <div
-            class="explanation"
-            id="explanation">
-        </div>
-
-
-        <div class="actions">
-
-            <button
-                class="btn secondary"
-                onclick="previousQuestion()">
-
-                ← Previous
-
-            </button>
-
-
-            <button
-                class="btn next"
-                id="nextButton"
-                onclick="nextQuestion()">
-
-                Next →
-
-            </button>
-
-        </div>
-
-
-        <div
-            class="question-grid"
-            id="questionGrid">
-        </div>
-
-
-    </div>
-
-
-    <div
-        class="result"
-        id="resultArea">
-
-        <h2>
-            🎉 Practice Set Completed
-        </h2>
-
-        <div
-            class="score"
-            id="finalScore">
-            0%
-        </div>
-
-        <p id="resultDetails">
-        </p>
-
-
-        <div class="result-actions">
-
-            <button
-                class="btn"
-                onclick="restartSet()">
-
-                🔄 Restart Set
-
-            </button>
-
-
-            <button
-                class="btn secondary"
-                onclick="shareResult()">
-
-                📤 Share Result
-
-            </button>
-
-        </div>
-
-    </div>
+</div>
 
 </main>
 
-
 <section class="info">
 
-    <div class="info-card">
+<div class="info-card">
 
-        <h2>
-            RRB Group D Preparation — Free
-        </h2>
+<h2 id="seoHeading">
+RRB Group D Practice Questions
+</h2>
 
-        <p>
-            Study With Deepak Sir provides free practice material
-            for RRB Group D aspirants.
-            Use the subject selector and practice sets to strengthen
-            your preparation.
-        </p>
+<p>
+Welcome to <strong>Study With Deepak Sir</strong>.
+This free practice tool is designed for students preparing for
+Railway and other competitive examinations.
+</p>
 
+<h3>📖 Subjects</h3>
 
-        <h2>
-            What You Can Practice
-        </h2>
+<p>
+Practice Mathematics, Reasoning, General Science and General Awareness.
+Select a subject and practice set above.
+</p>
 
-        <p>
-            Mathematics, Reasoning, General Science and General Awareness.
-            Each question gives immediate feedback and a short explanation.
-        </p>
+<h3>⏱ Practice With Timer</h3>
 
+<p>
+Timer mode helps you practise answering questions within a fixed
+period. You can turn the timer off whenever you want.
+</p>
 
-        <h2>
-            Keep Practising
-        </h2>
+<h3>🎯 How to use this practice tool</h3>
 
-        <p>
-            Attempt a set, review mistakes, and repeat.
-            More practice sets can be added without changing
-            the main website interface.
-        </p>
+<p>
+Choose a subject, select a practice set and answer each question.
+After answering, review the explanation and move to the next question.
+At the end you will see your score and accuracy.
+</p>
 
-    </div>
+<h3>📚 Practice Sets</h3>
+
+<div class="set-links">
+
+<a class="set-link" href="?subject=Maths&set=1">
+Maths Set 1
+</a>
+
+<a class="set-link" href="?subject=Maths&set=2">
+Maths Set 2
+</a>
+
+<a class="set-link" href="?subject=Maths&set=3">
+Maths Set 3
+</a>
+
+<a class="set-link" href="?subject=Reasoning&set=1">
+Reasoning Set 1
+</a>
+
+<a class="set-link" href="?subject=Science&set=1">
+Science Set 1
+</a>
+
+<a class="set-link" href="?subject=General%20Awareness&set=1">
+General Awareness Set 1
+</a>
+
+</div>
+
+</div>
 
 </section>
 
-
 <footer>
 
-    <div>
-        © 2026 Study With Deepak Sir
-    </div>
+<p>© 2026 Study With Deepak Sir</p>
 
-    <div>
-        Free RRB Group D Preparation • Practice • Learn • Improve
-    </div>
+<p>
+Free Competitive Exam Practice • Learn • Practise • Improve
+</p>
 
 </footer>
 
-
 <script src="questions.js"></script>
-
 
 <script>
 
-let sourceQuestions =
-    Array.isArray(window.RRB_QUESTIONS)
-        ? window.RRB_QUESTIONS
-        : [];
-
+const questions =
+Array.isArray(window.RRB_QUESTIONS)
+? window.RRB_QUESTIONS
+: [];
 
 let currentQuestions = [];
-
 let currentIndex = 0;
-
 let answers = [];
-
-let mode = "set";
-
+let timerEnabled = true;
+let secondsLeft = 600;
+let timerInterval = null;
+let randomMode = false;
 
 const subjectSelect =
-    document.getElementById("subjectSelect");
+document.getElementById("subjectSelect");
 
 const setSelect =
-    document.getElementById("setSelect");
+document.getElementById("setSelect");
 
+function getSets(subject){
 
-function availableSets(subject){
+const list =
+subject === "All"
+? questions
+: questions.filter(q=>q.subject===subject);
 
-    const list =
-        subject === "All"
-            ? sourceQuestions
-            : sourceQuestions.filter(
-                q => q.subject === subject
-            );
-
-    return [
-        ...new Set(
-            list.map(q => q.set || 1)
-        )
-    ].sort((a,b)=>a-b);
+return [...new Set(
+list.map(q=>Number(q.set||1))
+)].sort((a,b)=>a-b);
 
 }
-
 
 function populateSets(){
 
-    const subject =
-        subjectSelect.value;
+const subject =
+subjectSelect.value;
 
-    const sets =
-        availableSets(subject);
+const sets =
+getSets(subject);
 
-    setSelect.innerHTML = "";
+setSelect.innerHTML="";
 
+sets.forEach(set=>{
 
-    sets.forEach(setNumber => {
+const option =
+document.createElement("option");
 
-        const option =
-            document.createElement("option");
+option.value=set;
+option.textContent=
+"Practice Set "+set;
 
-        option.value =
-            setNumber;
+setSelect.appendChild(option);
 
-        option.textContent =
-            "Practice Set " + setNumber;
-
-        setSelect.appendChild(option);
-
-    });
-
-
-    if(!sets.length){
-
-        const option =
-            document.createElement("option");
-
-        option.value = "1";
-
-        option.textContent =
-            "No sets available";
-
-        setSelect.appendChild(option);
-
-    }
+});
 
 }
 
+function loadFromURL(){
+
+const params =
+new URLSearchParams(location.search);
+
+const subject =
+params.get("subject");
+
+const set =
+params.get("set");
+
+if(subject &&
+[...subjectSelect.options]
+.some(o=>o.value===subject)){
+
+subjectSelect.value=subject;
+
+}
+
+populateSets();
+
+if(set &&
+[...setSelect.options]
+.some(o=>o.value===set)){
+
+setSelect.value=set;
+
+}
+
+}
+
+function updateSEO(){
+
+const subject =
+subjectSelect.value;
+
+const set =
+setSelect.value;
+
+let title =
+"RRB Group D Practice Sets 2026 | Study With Deepak Sir";
+
+let heading =
+"RRB Group D Practice Questions";
+
+if(subject!=="All"){
+
+heading =
+`RRB Group D ${subject} Practice Set ${set}`;
+
+title =
+`${heading} 2026 | Study With Deepak Sir`;
+
+}else if(set){
+
+heading =
+`RRB Group D Practice Set ${set}`;
+
+}
+
+document.title=title;
+
+document.getElementById("pageTitle")
+.textContent="🚆 "+heading;
+
+document.getElementById("seoHeading")
+.textContent=heading;
+
+document.getElementById("pageSubtitle")
+.textContent =
+subject==="All"
+? "Free RRB Group D practice questions with answers, explanations and timed practice."
+: `Practice ${subject} questions with answers, explanations and timed practice.`;
+
+}
 
 function buildSet(){
 
-    const subject =
-        subjectSelect.value;
+randomMode=false;
 
-    const setNumber =
-        Number(setSelect.value || 1);
+const subject =
+subjectSelect.value;
 
+const set =
+Number(setSelect.value);
 
-    currentQuestions =
-        sourceQuestions.filter(q =>
+currentQuestions =
+questions.filter(q=>
+(subject==="All" || q.subject===subject)
+&& Number(q.set||1)===set
+);
 
-            (subject === "All" ||
-             q.subject === subject)
+startQuiz();
 
-            &&
-
-            Number(q.set || 1) === setNumber
-
-        );
-
-
-    mode = "set";
-
-    resetQuiz();
+updateSEO();
 
 }
-
-
-function changeSubject(){
-
-    populateSets();
-
-    buildSet();
-
-}
-
-
-function changeSet(){
-
-    buildSet();
-
-}
-
 
 function startRandom(){
 
-    const subject =
-        subjectSelect.value;
+const subject =
+subjectSelect.value;
 
+const pool =
+questions.filter(q=>
+subject==="All" || q.subject===subject
+);
 
-    const pool =
-        sourceQuestions.filter(q =>
+currentQuestions =
+[...pool].sort(
+()=>Math.random()-.5
+);
 
-            subject === "All" ||
-            q.subject === subject
+randomMode=true;
 
-        );
-
-
-    currentQuestions =
-        [...pool].sort(
-            () => Math.random() - 0.5
-        );
-
-
-    mode = "random";
-
-    resetQuiz();
+startQuiz();
 
 }
 
+function startQuiz(){
 
-function resetQuiz(){
+currentIndex=0;
 
-    currentIndex = 0;
+answers =
+new Array(currentQuestions.length)
+.fill(null);
 
-    answers =
-        new Array(
-            currentQuestions.length
-        ).fill(null);
+secondsLeft=600;
 
+clearInterval(timerInterval);
 
-    document.getElementById(
-        "quizArea"
-    ).style.display = "block";
+document.getElementById("quizArea")
+.style.display="block";
 
+document.getElementById("resultArea")
+.style.display="none";
 
-    document.getElementById(
-        "resultArea"
-    ).style.display = "none";
+document.getElementById("totalStat")
+.textContent=currentQuestions.length;
 
+if(timerEnabled){
 
-    document.getElementById(
-        "totalStat"
-    ).textContent =
-        currentQuestions.length;
+startTimer();
 
+}else{
 
-    renderQuestion();
+document.getElementById("timerDisplay")
+.textContent="⏱ Timer OFF";
 
 }
 
+renderQuestion();
+
+}
+
+function startTimer(){
+
+clearInterval(timerInterval);
+
+updateTimer();
+
+timerInterval=setInterval(()=>{
+
+secondsLeft--;
+
+updateTimer();
+
+if(secondsLeft<=0){
+
+clearInterval(timerInterval);
+
+finishQuiz(true);
+
+}
+
+},1000);
+
+}
+
+function updateTimer(){
+
+const min =
+Math.floor(secondsLeft/60);
+
+const sec =
+secondsLeft%60;
+
+const text =
+String(min).padStart(2,"0")
++
+":"
++
+String(sec).padStart(2,"0");
+
+document.getElementById("timerDisplay")
+.textContent="⏱ "+text;
+
+document.getElementById("timeStat")
+.textContent=text;
+
+}
 
 function renderQuestion(){
 
-    if(!currentQuestions.length){
+if(!currentQuestions.length){
 
-        document.getElementById(
-            "questionText"
-        ).textContent =
-            "No questions found in this set.";
+document.getElementById("questionText")
+.textContent="No questions available.";
 
-        document.getElementById(
-            "options"
-        ).innerHTML = "";
-
-        return;
-
-    }
-
-
-    const q =
-        currentQuestions[currentIndex];
-
-
-    const saved =
-        answers[currentIndex];
-
-
-    document.getElementById(
-        "questionCounter"
-    ).textContent =
-        `Question ${currentIndex + 1} of ${currentQuestions.length}`;
-
-
-    document.getElementById(
-        "subjectBadge"
-    ).textContent =
-        q.subject;
-
-
-    document.getElementById(
-        "questionText"
-    ).textContent =
-        q.question;
-
-
-    document.getElementById(
-        "progressBar"
-    ).style.width =
-        ((currentIndex + 1) /
-        currentQuestions.length * 100) + "%";
-
-
-    const options =
-        document.getElementById("options");
-
-
-    options.innerHTML = "";
-
-
-    q.options.forEach((option,index)=>{
-
-        const button =
-            document.createElement("button");
-
-
-        button.className =
-            "option";
-
-
-        button.textContent =
-            String.fromCharCode(65 + index)
-            + ". "
-            + option;
-
-
-        button.onclick =
-            () => answerQuestion(index);
-
-
-        if(saved !== null){
-
-            if(index === q.answer){
-
-                button.classList.add(
-                    "correct"
-                );
-
-            }
-
-
-            if(
-                index === saved &&
-                saved !== q.answer
-            ){
-
-                button.classList.add(
-                    "wrong"
-                );
-
-            }
-
-        }
-
-
-        options.appendChild(button);
-
-    });
-
-
-    const explanation =
-        document.getElementById(
-            "explanation"
-        );
-
-
-    if(saved !== null){
-
-        explanation.innerHTML =
-            "<strong>Explanation:</strong> "
-            + q.explanation;
-
-        explanation.style.display =
-            "block";
-
-    }else{
-
-        explanation.style.display =
-            "none";
-
-    }
-
-
-    const nextButton =
-        document.getElementById(
-            "nextButton"
-        );
-
-
-    nextButton.style.display =
-        "block";
-
-
-    nextButton.textContent =
-        currentIndex ===
-        currentQuestions.length - 1
-
-            ? "Finish →"
-
-            : "Next →";
-
-
-    updateStats();
-
-    renderGrid();
+return;
 
 }
 
+const q =
+currentQuestions[currentIndex];
+
+const saved =
+answers[currentIndex];
+
+document.getElementById("questionCounter")
+.textContent=
+`Question ${currentIndex+1} of ${currentQuestions.length}`;
+
+document.getElementById("subjectBadge")
+.textContent=q.subject;
+
+document.getElementById("questionText")
+.textContent=q.question;
+
+document.getElementById("progressBar")
+.style.width=
+((currentIndex+1)/currentQuestions.length*100)+"%";
+
+const options =
+document.getElementById("options");
+
+options.innerHTML="";
+
+q.options.forEach((option,index)=>{
+
+const button =
+document.createElement("button");
+
+button.className="option";
+
+button.textContent=
+String.fromCharCode(65+index)+". "+option;
+
+button.onclick=()=>{
+answerQuestion(index);
+};
+
+if(saved!==null){
+
+button.disabled=true;
+
+if(index===q.answer)
+button.classList.add("correct");
+
+if(index===saved && saved!==q.answer)
+button.classList.add("wrong");
+
+}
+
+options.appendChild(button);
+
+});
+
+const explanation =
+document.getElementById("explanation");
+
+if(saved!==null){
+
+explanation.innerHTML=
+"<strong>Explanation:</strong> "
++q.explanation;
+
+explanation.style.display="block";
+
+}else{
+
+explanation.style.display="none";
+
+}
+
+document.getElementById("nextBtn")
+.textContent=
+currentIndex===currentQuestions.length-1
+?"Finish →"
+:"Next →";
+
+updateStats();
+renderGrid();
+
+}
 
 function answerQuestion(index){
 
-    if(
-        answers[currentIndex] !== null
-    ){
+if(answers[currentIndex]!==null)
+return;
 
-        return;
+answers[currentIndex]=index;
 
-    }
-
-
-    answers[currentIndex] =
-        index;
-
-
-    renderQuestion();
+renderQuestion();
 
 }
-
 
 function nextQuestion(){
 
-    if(
-        answers[currentIndex] === null
-    ){
+if(answers[currentIndex]===null){
 
-        alert(
-            "Please select an answer first."
-        );
+alert("Please select an answer first.");
 
-        return;
-
-    }
-
-
-    if(
-        currentIndex ===
-        currentQuestions.length - 1
-    ){
-
-        showResult();
-
-        return;
-
-    }
-
-
-    currentIndex++;
-
-    renderQuestion();
+return;
 
 }
 
+if(currentIndex===
+currentQuestions.length-1){
+
+finishQuiz(false);
+
+return;
+
+}
+
+currentIndex++;
+
+renderQuestion();
+
+}
 
 function previousQuestion(){
 
-    if(currentIndex > 0){
+if(currentIndex>0){
 
-        currentIndex--;
+currentIndex--;
 
-        renderQuestion();
-
-    }
+renderQuestion();
 
 }
 
+}
 
 function renderGrid(){
 
-    const grid =
-        document.getElementById(
-            "questionGrid"
-        );
+const grid =
+document.getElementById("questionGrid");
 
+grid.innerHTML="";
 
-    grid.innerHTML = "";
+currentQuestions.forEach((q,index)=>{
 
+const button =
+document.createElement("button");
 
-    currentQuestions.forEach(
-        (question,index)=>{
+button.className="qnum";
 
-            const button =
-                document.createElement(
-                    "button"
-                );
+button.textContent=index+1;
 
+if(index===currentIndex)
+button.classList.add("current");
 
-            button.className =
-                "qnum";
+if(answers[index]!==null)
+button.classList.add("done");
 
+button.onclick=()=>{
 
-            if(index === currentIndex){
+currentIndex=index;
+renderQuestion();
 
-                button.classList.add(
-                    "current"
-                );
+};
 
-            }
+grid.appendChild(button);
 
-
-            if(
-                answers[index] !== null
-            ){
-
-                button.classList.add(
-                    "done"
-                );
-
-            }
-
-
-            button.textContent =
-                index + 1;
-
-
-            button.onclick = ()=>{
-
-                currentIndex =
-                    index;
-
-                renderQuestion();
-
-            };
-
-
-            grid.appendChild(button);
-
-        }
-    );
+});
 
 }
-
 
 function updateStats(){
 
-    const answered =
-        answers.filter(
-            answer =>
-                answer !== null
-        ).length;
+const attempted =
+answers.filter(a=>a!==null).length;
 
+const correct =
+answers.reduce((total,a,index)=>
+total+
+(
+a!==null &&
+a===currentQuestions[index].answer
+?1:0
+),0);
 
-    const correct =
-        answers.reduce(
-            (total,answer,index)=>
+const accuracy =
+attempted
+?Math.round(correct/attempted*100)
+:0;
 
-                total +
+document.getElementById("attemptedStat")
+.textContent=attempted;
 
-                (
-                    answer !== null &&
-                    answer ===
-                    currentQuestions[index]
-                        .answer
+document.getElementById("correctStat")
+.textContent=correct;
 
-                    ? 1
-                    : 0
-                ),
-
-            0
-        );
-
-
-    const percentage =
-        answered
-            ? Math.round(
-                correct /
-                answered *
-                100
-            )
-            : 0;
-
-
-    document.getElementById(
-        "answeredStat"
-    ).textContent =
-        answered;
-
-
-    document.getElementById(
-        "correctStat"
-    ).textContent =
-        correct;
-
-
-    document.getElementById(
-        "scoreStat"
-    ).textContent =
-        percentage + "%";
+document.getElementById("accuracyStat")
+.textContent=accuracy+"%";
 
 }
 
+function finishQuiz(timeUp){
 
-function showResult(){
+clearInterval(timerInterval);
 
-    const correct =
-        answers.reduce(
-            (total,answer,index)=>
+const correct =
+answers.reduce((total,a,index)=>
+total+
+(
+a!==null &&
+a===currentQuestions[index].answer
+?1:0
+),0);
 
-                total +
-                (
-                    answer ===
-                    currentQuestions[index]
-                        .answer
-                    ? 1
-                    : 0
-                ),
+const attempted =
+answers.filter(a=>a!==null).length;
 
-            0
-        );
+const wrong =
+attempted-correct;
 
+const accuracy =
+attempted
+?Math.round(correct/attempted*100)
+:0;
 
-    const percentage =
-        currentQuestions.length
-            ? Math.round(
-                correct /
-                currentQuestions.length *
-                100
-            )
-            : 0;
+const percentage =
+currentQuestions.length
+?Math.round(correct/currentQuestions.length*100)
+:0;
 
+document.getElementById("quizArea")
+.style.display="none";
 
-    document.getElementById(
-        "quizArea"
-    ).style.display =
-        "none";
+document.getElementById("resultArea")
+.style.display="block";
 
+document.getElementById("finalScore")
+.textContent=percentage+"%";
 
-    document.getElementById(
-        "resultArea"
-    ).style.display =
-        "block";
+document.getElementById("finalCorrect")
+.textContent=correct;
 
+document.getElementById("finalWrong")
+.textContent=wrong;
 
-    document.getElementById(
-        "finalScore"
-    ).textContent =
-        percentage + "%";
+document.getElementById("finalAccuracy")
+.textContent=accuracy+"%";
 
-
-    document.getElementById(
-        "resultDetails"
-    ).textContent =
-        `You answered ${correct} out of ${currentQuestions.length} questions correctly.`;
-
-}
-
-
-function restartSet(){
-
-    resetQuiz();
+document.getElementById("resultDetails")
+.textContent =
+timeUp
+?`Time ended. You attempted ${attempted} of ${currentQuestions.length} questions.`
+:`You attempted ${attempted} of ${currentQuestions.length} questions.`;
 
 }
 
+function toggleTimer(){
+
+timerEnabled=!timerEnabled;
+
+document.getElementById("timerBtn")
+.textContent=
+timerEnabled
+?"⏱ Timer: ON"
+:"⏱ Timer: OFF";
+
+if(timerEnabled){
+
+secondsLeft=600;
+startTimer();
+
+}else{
+
+clearInterval(timerInterval);
+
+document.getElementById("timerDisplay")
+.textContent="⏱ Timer OFF";
+
+}
+
+}
 
 function shareResult(){
 
-    const correct =
-        answers.reduce(
-            (total,answer,index)=>
+const correct =
+answers.reduce((total,a,index)=>
+total+
+(
+a!==null &&
+a===currentQuestions[index].answer
+?1:0
+),0);
 
-                total +
-                (
-                    answer ===
-                    currentQuestions[index]
-                        .answer
-                    ? 1
-                    : 0
-                ),
+const attempted =
+answers.filter(a=>a!==null).length;
 
-            0
-        );
+const percentage =
+currentQuestions.length
+?Math.round(correct/currentQuestions.length*100)
+:0;
 
+const text =
+`I scored ${correct}/${currentQuestions.length} (${percentage}%) in an RRB Group D practice set on Study With Deepak Sir.`;
 
-    const percentage =
-        currentQuestions.length
-            ? Math.round(
-                correct /
-                currentQuestions.length *
-                100
-            )
-            : 0;
+if(navigator.share){
 
+navigator.share({
+title:"RRB Group D Practice Result",
+text:text,
+url:location.href
+}).catch(()=>{});
 
-    const text =
-        `I scored ${correct}/${currentQuestions.length} (${percentage}%) in an RRB Group D practice set on Study With Deepak Sir.`;
+}else{
 
+navigator.clipboard.writeText(
+text+" "+location.href
+);
 
-    if(navigator.share){
-
-        navigator.share({
-
-            title:
-                "RRB Group D Practice",
-
-            text:text,
-
-            url:location.href
-
-        }).catch(()=>{});
-
-    }
-
-    else{
-
-        navigator.clipboard.writeText(
-            text + " " + location.href
-        );
-
-        alert(
-            "Result link copied."
-        );
-
-    }
+alert("Result copied.");
 
 }
 
+}
 
+subjectSelect.onchange=()=>{
 populateSets();
+buildSet();
+};
+
+setSelect.onchange=buildSet;
+
+document.getElementById("randomBtn")
+.onclick=startRandom;
+
+document.getElementById("timerBtn")
+.onclick=toggleTimer;
+
+document.getElementById("nextBtn")
+.onclick=nextQuestion;
+
+document.getElementById("previousBtn")
+.onclick=previousQuestion;
+
+document.getElementById("restartBtn")
+.onclick=()=>{
+buildSet();
+};
+
+document.getElementById("shareBtn")
+.onclick=shareResult;
+
+loadFromURL();
 
 buildSet();
 
 </script>
 
 </body>
-</html>
+    </html>
