@@ -4,15 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RRB Group D Practice Questions 2026 | Study With Deepak Sir</title>
+<title>RRB Group D Practice Sets 2026 | Study With Deepak Sir</title>
 
-<meta name="description" content="Free RRB Group D preparation with Maths, Reasoning, General Science and General Awareness practice questions, answers and explanations.">
-<meta name="keywords" content="RRB Group D, RRB Group D questions, RRB Group D practice set, RRB Group D mock test, railway group d preparation, railway exam questions">
+<meta name="description"
+content="Free RRB Group D practice sets for Maths, Reasoning, General Science and General Awareness with answers and explanations.">
+
+<meta name="keywords"
+content="RRB Group D practice set, RRB Group D questions, railway group D mock test, RRB Group D maths, RRB Group D reasoning">
+
 <meta name="author" content="Study With Deepak Sir">
-
-<meta property="og:title" content="RRB Group D Free Practice | Study With Deepak Sir">
-<meta property="og:description" content="Practice RRB Group D questions for free. Maths, Reasoning, Science and General Awareness.">
-<meta property="og:type" content="website">
+<meta name="robots" content="index,follow">
 
 <style>
 *{
@@ -25,14 +26,14 @@ body{
     font-family:Arial,Helvetica,sans-serif;
     background:#f4f7fb;
     color:#172033;
-    line-height:1.6;
+    line-height:1.55;
 }
 
 header{
     background:linear-gradient(135deg,#172554,#2563eb);
     color:white;
-    padding:22px 15px 28px;
     text-align:center;
+    padding:22px 15px 28px;
 }
 
 .logo{
@@ -41,73 +42,93 @@ header{
 }
 
 .tagline{
-    margin-top:5px;
     font-size:14px;
     opacity:.9;
+    margin-top:4px;
 }
 
 .hero{
-    max-width:850px;
+    max-width:950px;
     margin:auto;
-    padding:25px 15px;
+    padding:25px 15px 15px;
     text-align:center;
 }
 
 .hero h1{
-    font-size:28px;
-    margin-bottom:10px;
+    font-size:29px;
+    margin-bottom:8px;
 }
 
 .hero p{
     color:#526074;
 }
 
-.categories{
-    max-width:900px;
-    margin:0 auto 20px;
+.controls{
+    max-width:950px;
+    margin:15px auto;
     padding:0 12px;
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
+}
+
+.toolbar{
+    display:flex;
     gap:10px;
+    flex-wrap:wrap;
 }
 
-.category{
+select,
+.btn{
     border:0;
-    border-radius:12px;
-    padding:14px 8px;
-    background:white;
-    box-shadow:0 3px 12px rgba(0,0,0,.07);
-    cursor:pointer;
-    font-weight:bold;
-    color:#172554;
+    border-radius:10px;
+    padding:12px 14px;
+    font-size:15px;
 }
 
-.category.active{
+select{
+    background:white;
+    border:1px solid #dbe2ea;
+    flex:1;
+    min-width:180px;
+}
+
+.btn{
     background:#2563eb;
     color:white;
+    font-weight:700;
+    cursor:pointer;
 }
 
-.container{
-    max-width:850px;
-    margin:auto;
-    padding:0 12px 40px;
+.btn.secondary{
+    background:#e5e7eb;
+    color:#172033;
 }
 
 .card{
+    max-width:950px;
+    margin:0 auto 20px;
     background:white;
     border-radius:18px;
-    padding:22px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    padding:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
 }
 
-.topbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+.stats{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
     gap:10px;
-    margin-bottom:15px;
-    font-size:14px;
-    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.stat{
+    background:#f8fafc;
+    border-radius:12px;
+    padding:12px;
+    text-align:center;
+}
+
+.stat strong{
+    display:block;
+    font-size:20px;
+    color:#1d4ed8;
 }
 
 .progress{
@@ -115,31 +136,38 @@ header{
     background:#e5e7eb;
     border-radius:20px;
     overflow:hidden;
-    margin-bottom:22px;
+    margin-bottom:20px;
 }
 
 .progress-bar{
     height:100%;
-    width:0%;
+    width:0;
     background:#2563eb;
-    transition:.3s;
+    transition:.25s;
 }
 
-.subject{
+.meta{
+    display:flex;
+    justify-content:space-between;
+    gap:8px;
+    flex-wrap:wrap;
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.badge{
     display:inline-block;
     background:#e0ecff;
     color:#1d4ed8;
-    padding:5px 10px;
     border-radius:20px;
-    font-size:12px;
-    font-weight:bold;
-    margin-bottom:12px;
+    padding:5px 10px;
 }
 
 .question{
     font-size:20px;
     font-weight:700;
-    margin-bottom:20px;
+    margin:12px 0 18px;
 }
 
 .option{
@@ -148,11 +176,10 @@ header{
     background:white;
     padding:13px;
     border-radius:11px;
-    margin:9px 0;
+    margin:8px 0;
     text-align:left;
     font-size:16px;
     cursor:pointer;
-    transition:.2s;
 }
 
 .option:hover{
@@ -174,69 +201,71 @@ header{
 
 .explanation{
     display:none;
-    margin-top:18px;
+    margin-top:16px;
     padding:14px;
     background:#f8fafc;
     border-left:4px solid #2563eb;
     border-radius:8px;
 }
 
+.actions{
+    display:flex;
+    gap:10px;
+    margin-top:18px;
+}
+
+.actions button{
+    flex:1;
+}
+
 .next{
-    width:100%;
-    margin-top:20px;
-    padding:14px;
-    border:0;
-    border-radius:11px;
-    background:#2563eb;
-    color:white;
-    font-size:17px;
-    font-weight:bold;
-    cursor:pointer;
     display:none;
 }
 
-.next:hover{
-    background:#1d4ed8;
+.question-grid{
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+    gap:6px;
+    margin-top:18px;
+}
+
+.qnum{
+    border:1px solid #dbe2ea;
+    background:white;
+    border-radius:7px;
+    padding:7px 2px;
+    cursor:pointer;
+    font-size:12px;
+}
+
+.qnum.current{
+    background:#2563eb;
+    color:white;
+}
+
+.qnum.done{
+    background:#dcfce7;
+    color:#166534;
 }
 
 .result{
-    display:none;
     text-align:center;
-}
-
-.result h2{
-    font-size:28px;
-    margin-bottom:10px;
+    display:none;
 }
 
 .score{
-    font-size:42px;
+    font-size:44px;
     font-weight:800;
     color:#2563eb;
-    margin:15px;
+    margin:10px;
 }
 
-.restart,.share{
-    border:0;
-    border-radius:10px;
-    padding:13px 20px;
-    margin:5px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-.restart{
-    background:#2563eb;
-    color:white;
-}
-
-.share{
-    background:#e5e7eb;
-    color:#172033;
+.result-actions{
+    margin-top:18px;
 }
 
 .info{
-    max-width:850px;
+    max-width:950px;
     margin:20px auto;
     padding:0 12px;
 }
@@ -245,17 +274,17 @@ header{
     background:white;
     padding:22px;
     border-radius:16px;
-    box-shadow:0 4px 15px rgba(0,0,0,.06);
+    box-shadow:0 4px 15px rgba(0,0,0,.05);
 }
 
 .info-card h2{
-    margin-bottom:10px;
     color:#172554;
+    margin-bottom:8px;
 }
 
 .info-card p{
-    margin-bottom:12px;
     color:#4b5563;
+    margin-bottom:12px;
 }
 
 footer{
@@ -268,7 +297,8 @@ footer{
 }
 
 @media(max-width:650px){
-    .categories{
+
+    .stats{
         grid-template-columns:repeat(2,1fr);
     }
 
@@ -280,8 +310,12 @@ footer{
         font-size:18px;
     }
 
-    .card{
-        padding:18px;
+    .question-grid{
+        grid-template-columns:repeat(8,1fr);
+    }
+
+    .actions{
+        flex-direction:column;
     }
 }
 </style>
@@ -290,499 +324,982 @@ footer{
 <body>
 
 <header>
-    <div class="logo">📚 Study With Deepak Sir</div>
-    <div class="tagline">Free Competitive Exam Preparation</div>
+
+    <div class="logo">
+        📚 Study With Deepak Sir
+    </div>
+
+    <div class="tagline">
+        Free Competitive Exam Preparation
+    </div>
+
 </header>
 
+
 <section class="hero">
-    <h1>🚆 RRB Group D Free Practice</h1>
+
+    <h1>
+        🚆 RRB Group D Practice Sets
+    </h1>
+
     <p>
-        Practice Maths, Reasoning, General Science and General Awareness
-        questions completely free.
+        Free subject-wise practice questions with instant answers and explanations.
     </p>
+
 </section>
 
-<div class="categories">
-    <button class="category active" onclick="selectSubject('All',this)">All</button>
-    <button class="category" onclick="selectSubject('Maths',this)">🧮 Maths</button>
-    <button class="category" onclick="selectSubject('Reasoning',this)">🧠 Reasoning</button>
-    <button class="category" onclick="selectSubject('Science',this)">🔬 Science</button>
-</div>
 
-<div class="container">
+<section class="controls">
 
-<div class="card">
+    <div class="toolbar">
+
+        <select id="subjectSelect" onchange="changeSubject()">
+
+            <option value="All">
+                All Subjects
+            </option>
+
+            <option value="Maths">
+                🧮 Maths
+            </option>
+
+            <option value="Reasoning">
+                🧠 Reasoning
+            </option>
+
+            <option value="Science">
+                🔬 General Science
+            </option>
+
+            <option value="General Awareness">
+                🌍 General Awareness
+            </option>
+
+        </select>
+
+
+        <select id="setSelect" onchange="changeSet()">
+        </select>
+
+
+        <button
+            class="btn"
+            onclick="startRandom()">
+
+            🎲 Random Practice
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<main class="card" id="quizCard">
+
+
+    <div class="stats">
+
+        <div class="stat">
+
+            <span>
+                Questions
+            </span>
+
+            <strong id="totalStat">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="stat">
+
+            <span>
+                Answered
+            </span>
+
+            <strong id="answeredStat">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="stat">
+
+            <span>
+                Correct
+            </span>
+
+            <strong id="correctStat">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="stat">
+
+            <span>
+                Score
+            </span>
+
+            <strong id="scoreStat">
+                0%
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <div class="progress">
+
+        <div
+            class="progress-bar"
+            id="progressBar">
+        </div>
+
+    </div>
+
 
     <div id="quizArea">
 
-        <div class="topbar">
-            <span id="questionNumber">Question 1</span>
-            <span id="scoreText">Score: 0</span>
+
+        <div class="meta">
+
+            <span
+                class="badge"
+                id="subjectBadge">
+                Maths
+            </span>
+
+            <span id="questionCounter">
+                Question 1
+            </span>
+
         </div>
 
-        <div class="progress">
-            <div class="progress-bar" id="progressBar"></div>
+
+        <div
+            class="question"
+            id="questionText">
         </div>
 
-        <span class="subject" id="subjectLabel">Maths</span>
 
-        <div class="question" id="questionText"></div>
+        <div id="options">
+        </div>
 
-        <div id="options"></div>
 
-        <div class="explanation" id="explanation"></div>
+        <div
+            class="explanation"
+            id="explanation">
+        </div>
 
-        <button class="next" id="nextButton" onclick="nextQuestion()">
-            Next Question →
-        </button>
+
+        <div class="actions">
+
+            <button
+                class="btn secondary"
+                onclick="previousQuestion()">
+
+                ← Previous
+
+            </button>
+
+
+            <button
+                class="btn next"
+                id="nextButton"
+                onclick="nextQuestion()">
+
+                Next →
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="question-grid"
+            id="questionGrid">
+        </div>
+
 
     </div>
 
-    <div class="result" id="resultArea">
-        <h2>🎉 Practice Completed!</h2>
 
-        <p>Your Score</p>
+    <div
+        class="result"
+        id="resultArea">
 
-        <div class="score" id="finalScore">0/20</div>
+        <h2>
+            🎉 Practice Set Completed
+        </h2>
 
-        <p id="resultMessage"></p>
+        <div
+            class="score"
+            id="finalScore">
+            0%
+        </div>
 
-        <br>
+        <p id="resultDetails">
+        </p>
 
-        <button class="restart" onclick="restartQuiz()">
-            🔄 Try Again
-        </button>
 
-        <button class="share" onclick="shareResult()">
-            📤 Share Result
-        </button>
+        <div class="result-actions">
+
+            <button
+                class="btn"
+                onclick="restartSet()">
+
+                🔄 Restart Set
+
+            </button>
+
+
+            <button
+                class="btn secondary"
+                onclick="shareResult()">
+
+                📤 Share Result
+
+            </button>
+
+        </div>
+
     </div>
 
-</div>
+</main>
 
-</div>
 
 <section class="info">
 
-<div class="info-card">
+    <div class="info-card">
 
-<h2>RRB Group D Preparation</h2>
+        <h2>
+            RRB Group D Preparation — Free
+        </h2>
 
-<p>
-Welcome to <strong>Study With Deepak Sir</strong>.
-Our objective is to provide useful competitive-exam preparation
-resources free of cost.
-</p>
+        <p>
+            Study With Deepak Sir provides free practice material
+            for RRB Group D aspirants.
+            Use the subject selector and practice sets to strengthen
+            your preparation.
+        </p>
 
-<p>
-This practice section contains questions from important areas such as
-Mathematics, Reasoning, General Science and General Awareness.
-</p>
 
-<h2>How to Use This Practice Set</h2>
+        <h2>
+            What You Can Practice
+        </h2>
 
-<p>
-Read each question carefully, select your answer and check the
-explanation. Try to improve your score with every practice session.
-</p>
+        <p>
+            Mathematics, Reasoning, General Science and General Awareness.
+            Each question gives immediate feedback and a short explanation.
+        </p>
 
-<p>
-More practice sets, mock tests and subject-wise questions can be added
-to this website as the platform grows.
-</p>
 
-</div>
+        <h2>
+            Keep Practising
+        </h2>
+
+        <p>
+            Attempt a set, review mistakes, and repeat.
+            More practice sets can be added without changing
+            the main website interface.
+        </p>
+
+    </div>
 
 </section>
 
+
 <footer>
 
-<div>© 2026 Study With Deepak Sir</div>
+    <div>
+        © 2026 Study With Deepak Sir
+    </div>
 
-<div style="margin-top:6px;">
-Free RRB Group D Preparation • Practice • Learn • Improve
-</div>
+    <div>
+        Free RRB Group D Preparation • Practice • Learn • Improve
+    </div>
 
 </footer>
 
+
+<script src="questions.js"></script>
+
+
 <script>
 
-const allQuestions = [
+let sourceQuestions =
+    Array.isArray(window.RRB_QUESTIONS)
+        ? window.RRB_QUESTIONS
+        : [];
 
-{
-subject:"Maths",
-question:"If 25% of a number is 40, what is the number?",
-options:["120","140","160","180"],
-answer:2,
-explanation:"25% means 1/4. Therefore the number is 40 × 4 = 160."
-},
 
-{
-subject:"Maths",
-question:"What is 15 × 12?",
-options:["160","170","180","190"],
-answer:2,
-explanation:"15 × 12 = 180."
-},
+let currentQuestions = [];
 
-{
-subject:"Maths",
-question:"A train travels 120 km in 2 hours. What is its average speed?",
-options:["40 km/h","50 km/h","60 km/h","80 km/h"],
-answer:2,
-explanation:"Speed = Distance ÷ Time = 120 ÷ 2 = 60 km/h."
-},
+let currentIndex = 0;
 
-{
-subject:"Maths",
-question:"What is the HCF of 18 and 24?",
-options:["3","6","9","12"],
-answer:1,
-explanation:"The highest common factor of 18 and 24 is 6."
-},
+let answers = [];
 
-{
-subject:"Maths",
-question:"What is 20% of 250?",
-options:["40","50","60","70"],
-answer:1,
-explanation:"20% of 250 = 250 × 20/100 = 50."
-},
+let mode = "set";
 
-{
-subject:"Reasoning",
-question:"Find the next number: 2, 4, 8, 16, ?",
-options:["20","24","30","32"],
-answer:3,
-explanation:"Each number is multiplied by 2. Therefore the next number is 32."
-},
 
-{
-subject:"Reasoning",
-question:"If CAT is coded as DBU, how is DOG coded?",
-options:["EPH","EOG","DPH","FPH"],
-answer:0,
-explanation:"Each letter is moved one position forward: D→E, O→P, G→H."
-},
+const subjectSelect =
+    document.getElementById("subjectSelect");
 
-{
-subject:"Reasoning",
-question:"Which one is different from the others?",
-options:["Apple","Mango","Banana","Carrot"],
-answer:3,
-explanation:"Apple, mango and banana are fruits. Carrot is a vegetable."
-},
+const setSelect =
+    document.getElementById("setSelect");
 
-{
-subject:"Reasoning",
-question:"Find the missing number: 5, 10, 15, 20, ?",
-options:["22","24","25","30"],
-answer:2,
-explanation:"The sequence increases by 5 each time. The answer is 25."
-},
 
-{
-subject:"Reasoning",
-question:"If NORTH is opposite to SOUTH, EAST is opposite to which direction?",
-options:["North","West","South","North-East"],
-answer:1,
-explanation:"East and West are opposite directions."
-},
+function availableSets(subject){
 
-{
-subject:"Science",
-question:"What is the chemical formula of water?",
-options:["CO2","H2O","O2","NaCl"],
-answer:1,
-explanation:"Water contains two hydrogen atoms and one oxygen atom: H2O."
-},
+    const list =
+        subject === "All"
+            ? sourceQuestions
+            : sourceQuestions.filter(
+                q => q.subject === subject
+            );
 
-{
-subject:"Science",
-question:"Which organ pumps blood throughout the human body?",
-options:["Lungs","Brain","Heart","Kidney"],
-answer:2,
-explanation:"The heart pumps blood throughout the body."
-},
+    return [
+        ...new Set(
+            list.map(q => q.set || 1)
+        )
+    ].sort((a,b)=>a-b);
 
-{
-subject:"Science",
-question:"What is the SI unit of force?",
-options:["Joule","Watt","Newton","Pascal"],
-answer:2,
-explanation:"The SI unit of force is the Newton (N)."
-},
-
-{
-subject:"Science",
-question:"Which gas is most abundant in Earth's atmosphere?",
-options:["Oxygen","Nitrogen","Carbon dioxide","Hydrogen"],
-answer:1,
-explanation:"Nitrogen makes up about 78% of Earth's atmosphere."
-},
-
-{
-subject:"Science",
-question:"Which vitamin is mainly produced in the skin through sunlight exposure?",
-options:["Vitamin A","Vitamin B","Vitamin C","Vitamin D"],
-answer:3,
-explanation:"Sunlight helps the skin produce Vitamin D."
-},
-
-{
-subject:"General Awareness",
-question:"What is the capital of India?",
-options:["Mumbai","Kolkata","New Delhi","Chennai"],
-answer:2,
-explanation:"New Delhi is the capital of India."
-},
-
-{
-subject:"General Awareness",
-question:"Which is the largest planet in our Solar System?",
-options:["Earth","Mars","Jupiter","Saturn"],
-answer:2,
-explanation:"Jupiter is the largest planet in our Solar System."
-},
-
-{
-subject:"General Awareness",
-question:"How many states are there in India?",
-options:["26","28","29","30"],
-answer:1,
-explanation:"India currently has 28 states."
-},
-
-{
-subject:"General Awareness",
-question:"Which is India's national animal?",
-options:["Lion","Elephant","Tiger","Leopard"],
-answer:2,
-explanation:"The Bengal tiger is India's national animal."
-},
-
-{
-subject:"General Awareness",
-question:"Which ocean lies south of India?",
-options:["Atlantic Ocean","Indian Ocean","Pacific Ocean","Arctic Ocean"],
-answer:1,
-explanation:"The Indian Ocean lies to the south of India."
 }
 
-];
 
-let currentQuestions = [...allQuestions];
-let currentIndex = 0;
-let score = 0;
-let answered = false;
+function populateSets(){
 
-function loadQuestion(){
+    const subject =
+        subjectSelect.value;
 
-    answered = false;
+    const sets =
+        availableSets(subject);
 
-    const q = currentQuestions[currentIndex];
+    setSelect.innerHTML = "";
 
-    document.getElementById("questionNumber").textContent =
-        "Question " + (currentIndex + 1);
 
-    document.getElementById("scoreText").textContent =
-        "Score: " + score;
+    sets.forEach(setNumber => {
 
-    document.getElementById("progressBar").style.width =
-        ((currentIndex) / currentQuestions.length * 100) + "%";
+        const option =
+            document.createElement("option");
 
-    document.getElementById("subjectLabel").textContent =
+        option.value =
+            setNumber;
+
+        option.textContent =
+            "Practice Set " + setNumber;
+
+        setSelect.appendChild(option);
+
+    });
+
+
+    if(!sets.length){
+
+        const option =
+            document.createElement("option");
+
+        option.value = "1";
+
+        option.textContent =
+            "No sets available";
+
+        setSelect.appendChild(option);
+
+    }
+
+}
+
+
+function buildSet(){
+
+    const subject =
+        subjectSelect.value;
+
+    const setNumber =
+        Number(setSelect.value || 1);
+
+
+    currentQuestions =
+        sourceQuestions.filter(q =>
+
+            (subject === "All" ||
+             q.subject === subject)
+
+            &&
+
+            Number(q.set || 1) === setNumber
+
+        );
+
+
+    mode = "set";
+
+    resetQuiz();
+
+}
+
+
+function changeSubject(){
+
+    populateSets();
+
+    buildSet();
+
+}
+
+
+function changeSet(){
+
+    buildSet();
+
+}
+
+
+function startRandom(){
+
+    const subject =
+        subjectSelect.value;
+
+
+    const pool =
+        sourceQuestions.filter(q =>
+
+            subject === "All" ||
+            q.subject === subject
+
+        );
+
+
+    currentQuestions =
+        [...pool].sort(
+            () => Math.random() - 0.5
+        );
+
+
+    mode = "random";
+
+    resetQuiz();
+
+}
+
+
+function resetQuiz(){
+
+    currentIndex = 0;
+
+    answers =
+        new Array(
+            currentQuestions.length
+        ).fill(null);
+
+
+    document.getElementById(
+        "quizArea"
+    ).style.display = "block";
+
+
+    document.getElementById(
+        "resultArea"
+    ).style.display = "none";
+
+
+    document.getElementById(
+        "totalStat"
+    ).textContent =
+        currentQuestions.length;
+
+
+    renderQuestion();
+
+}
+
+
+function renderQuestion(){
+
+    if(!currentQuestions.length){
+
+        document.getElementById(
+            "questionText"
+        ).textContent =
+            "No questions found in this set.";
+
+        document.getElementById(
+            "options"
+        ).innerHTML = "";
+
+        return;
+
+    }
+
+
+    const q =
+        currentQuestions[currentIndex];
+
+
+    const saved =
+        answers[currentIndex];
+
+
+    document.getElementById(
+        "questionCounter"
+    ).textContent =
+        `Question ${currentIndex + 1} of ${currentQuestions.length}`;
+
+
+    document.getElementById(
+        "subjectBadge"
+    ).textContent =
         q.subject;
 
-    document.getElementById("questionText").textContent =
+
+    document.getElementById(
+        "questionText"
+    ).textContent =
         q.question;
 
-    const optionsDiv = document.getElementById("options");
 
-    optionsDiv.innerHTML = "";
+    document.getElementById(
+        "progressBar"
+    ).style.width =
+        ((currentIndex + 1) /
+        currentQuestions.length * 100) + "%";
+
+
+    const options =
+        document.getElementById("options");
+
+
+    options.innerHTML = "";
+
 
     q.options.forEach((option,index)=>{
 
-        const button = document.createElement("button");
+        const button =
+            document.createElement("button");
 
-        button.className = "option";
+
+        button.className =
+            "option";
+
+
         button.textContent =
-            String.fromCharCode(65 + index) + ". " + option;
+            String.fromCharCode(65 + index)
+            + ". "
+            + option;
 
-        button.onclick = () => checkAnswer(index,button);
 
-        optionsDiv.appendChild(button);
+        button.onclick =
+            () => answerQuestion(index);
 
-    });
 
-    document.getElementById("explanation").style.display="none";
+        if(saved !== null){
 
-    document.getElementById("nextButton").style.display="none";
-}
+            if(index === q.answer){
 
-function checkAnswer(selected,button){
+                button.classList.add(
+                    "correct"
+                );
 
-    if(answered) return;
+            }
 
-    answered = true;
 
-    const q = currentQuestions[currentIndex];
+            if(
+                index === saved &&
+                saved !== q.answer
+            ){
 
-    const buttons =
-        document.querySelectorAll(".option");
+                button.classList.add(
+                    "wrong"
+                );
 
-    buttons.forEach((btn,i)=>{
+            }
 
-        if(i === q.answer){
-            btn.classList.add("correct");
         }
 
+
+        options.appendChild(button);
+
     });
 
-    if(selected === q.answer){
 
-        score++;
+    const explanation =
+        document.getElementById(
+            "explanation"
+        );
+
+
+    if(saved !== null){
+
+        explanation.innerHTML =
+            "<strong>Explanation:</strong> "
+            + q.explanation;
+
+        explanation.style.display =
+            "block";
 
     }else{
 
-        button.classList.add("wrong");
+        explanation.style.display =
+            "none";
 
     }
 
-    document.getElementById("scoreText").textContent =
-        "Score: " + score;
 
-    const explanation =
-        document.getElementById("explanation");
+    const nextButton =
+        document.getElementById(
+            "nextButton"
+        );
 
-    explanation.innerHTML =
-        "<strong>Explanation:</strong> " +
-        q.explanation;
 
-    explanation.style.display="block";
+    nextButton.style.display =
+        "block";
 
-    document.getElementById("nextButton").style.display="block";
+
+    nextButton.textContent =
+        currentIndex ===
+        currentQuestions.length - 1
+
+            ? "Finish →"
+
+            : "Next →";
+
+
+    updateStats();
+
+    renderGrid();
+
 }
+
+
+function answerQuestion(index){
+
+    if(
+        answers[currentIndex] !== null
+    ){
+
+        return;
+
+    }
+
+
+    answers[currentIndex] =
+        index;
+
+
+    renderQuestion();
+
+}
+
 
 function nextQuestion(){
 
-    currentIndex++;
+    if(
+        answers[currentIndex] === null
+    ){
 
-    if(currentIndex >= currentQuestions.length){
+        alert(
+            "Please select an answer first."
+        );
+
+        return;
+
+    }
+
+
+    if(
+        currentIndex ===
+        currentQuestions.length - 1
+    ){
 
         showResult();
 
-    }else{
-
-        loadQuestion();
+        return;
 
     }
+
+
+    currentIndex++;
+
+    renderQuestion();
+
 }
+
+
+function previousQuestion(){
+
+    if(currentIndex > 0){
+
+        currentIndex--;
+
+        renderQuestion();
+
+    }
+
+}
+
+
+function renderGrid(){
+
+    const grid =
+        document.getElementById(
+            "questionGrid"
+        );
+
+
+    grid.innerHTML = "";
+
+
+    currentQuestions.forEach(
+        (question,index)=>{
+
+            const button =
+                document.createElement(
+                    "button"
+                );
+
+
+            button.className =
+                "qnum";
+
+
+            if(index === currentIndex){
+
+                button.classList.add(
+                    "current"
+                );
+
+            }
+
+
+            if(
+                answers[index] !== null
+            ){
+
+                button.classList.add(
+                    "done"
+                );
+
+            }
+
+
+            button.textContent =
+                index + 1;
+
+
+            button.onclick = ()=>{
+
+                currentIndex =
+                    index;
+
+                renderQuestion();
+
+            };
+
+
+            grid.appendChild(button);
+
+        }
+    );
+
+}
+
+
+function updateStats(){
+
+    const answered =
+        answers.filter(
+            answer =>
+                answer !== null
+        ).length;
+
+
+    const correct =
+        answers.reduce(
+            (total,answer,index)=>
+
+                total +
+
+                (
+                    answer !== null &&
+                    answer ===
+                    currentQuestions[index]
+                        .answer
+
+                    ? 1
+                    : 0
+                ),
+
+            0
+        );
+
+
+    const percentage =
+        answered
+            ? Math.round(
+                correct /
+                answered *
+                100
+            )
+            : 0;
+
+
+    document.getElementById(
+        "answeredStat"
+    ).textContent =
+        answered;
+
+
+    document.getElementById(
+        "correctStat"
+    ).textContent =
+        correct;
+
+
+    document.getElementById(
+        "scoreStat"
+    ).textContent =
+        percentage + "%";
+
+}
+
 
 function showResult(){
 
-    document.getElementById("quizArea").style.display="none";
+    const correct =
+        answers.reduce(
+            (total,answer,index)=>
 
-    document.getElementById("resultArea").style.display="block";
+                total +
+                (
+                    answer ===
+                    currentQuestions[index]
+                        .answer
+                    ? 1
+                    : 0
+                ),
 
-    document.getElementById("finalScore").textContent =
-        score + "/" + currentQuestions.length;
+            0
+        );
 
-    let percentage =
-        Math.round(score/currentQuestions.length*100);
 
-    let message="";
+    const percentage =
+        currentQuestions.length
+            ? Math.round(
+                correct /
+                currentQuestions.length *
+                100
+            )
+            : 0;
 
-    if(percentage >= 80){
 
-        message="Excellent practice! Keep maintaining your preparation.";
+    document.getElementById(
+        "quizArea"
+    ).style.display =
+        "none";
 
-    }else if(percentage >= 50){
 
-        message="Good attempt. More practice can improve your score.";
+    document.getElementById(
+        "resultArea"
+    ).style.display =
+        "block";
 
-    }else{
 
-        message="Keep practicing. Try the questions again and learn from the explanations.";
+    document.getElementById(
+        "finalScore"
+    ).textContent =
+        percentage + "%";
 
-    }
 
-    document.getElementById("resultMessage").textContent =
-        message;
+    document.getElementById(
+        "resultDetails"
+    ).textContent =
+        `You answered ${correct} out of ${currentQuestions.length} questions correctly.`;
+
+}
+
+
+function restartSet(){
+
+    resetQuiz();
 
 }
 
-function restartQuiz(){
-
-    currentIndex=0;
-    score=0;
-
-    document.getElementById("quizArea").style.display="block";
-
-    document.getElementById("resultArea").style.display="none";
-
-    loadQuestion();
-
-}
-
-function selectSubject(subject,element){
-
-    document.querySelectorAll(".category")
-        .forEach(btn=>btn.classList.remove("active"));
-
-    element.classList.add("active");
-
-    if(subject === "All"){
-
-        currentQuestions=[...allQuestions];
-
-    }else{
-
-        currentQuestions =
-            allQuestions.filter(q=>q.subject === subject);
-
-    }
-
-    currentIndex=0;
-    score=0;
-
-    document.getElementById("quizArea").style.display="block";
-    document.getElementById("resultArea").style.display="none";
-
-    loadQuestion();
-
-}
 
 function shareResult(){
 
+    const correct =
+        answers.reduce(
+            (total,answer,index)=>
+
+                total +
+                (
+                    answer ===
+                    currentQuestions[index]
+                        .answer
+                    ? 1
+                    : 0
+                ),
+
+            0
+        );
+
+
+    const percentage =
+        currentQuestions.length
+            ? Math.round(
+                correct /
+                currentQuestions.length *
+                100
+            )
+            : 0;
+
+
     const text =
-        "I scored " + score + "/" +
-        currentQuestions.length +
-        " in the RRB Group D practice test at Study With Deepak Sir.";
+        `I scored ${correct}/${currentQuestions.length} (${percentage}%) in an RRB Group D practice set on Study With Deepak Sir.`;
+
 
     if(navigator.share){
 
         navigator.share({
-            title:"RRB Group D Practice",
-            text:text,
-            url:window.location.href
-        });
 
-    }else{
+            title:
+                "RRB Group D Practice",
+
+            text:text,
+
+            url:location.href
+
+        }).catch(()=>{});
+
+    }
+
+    else{
 
         navigator.clipboard.writeText(
-            text + " " + window.location.href
+            text + " " + location.href
         );
 
-        alert("Result copied. Share it with your friends!");
+        alert(
+            "Result link copied."
+        );
 
     }
 
 }
 
-loadQuestion();
+
+populateSets();
+
+buildSet();
 
 </script>
 
 </body>
-          </html>
+</html>
