@@ -2,291 +2,275 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>RRB Group D Practice Questions 2026 | Study With Deepak Sir</title>
+<title>RRB Group D Practice Questions | Study With Deepak Sir</title>
 
 <meta name="description"
-content="Free RRB Group D practice questions, mock tests and daily questions for Maths, Reasoning, General Science and General Awareness.">
+content="Free RRB Group D practice questions for Maths, Reasoning, General Science and General Awareness. Practice online with Study With Deepak Sir.">
 
 <meta name="keywords"
-content="RRB Group D practice questions, RRB Group D mock test, railway group D questions, RRB Group D maths, RRB Group D reasoning">
+content="RRB Group D questions, Railway Group D practice, RRB Group D Maths, RRB Group D Reasoning, RRB Group D Science, RRB Group D GK">
 
-<meta name="robots" content="index,follow">
-
-<meta property="og:title"
-content="RRB Group D Practice | Study With Deepak Sir">
-
-<meta property="og:description"
-content="Free RRB Group D practice questions and mock tests.">
+<meta name="author" content="Study With Deepak Sir">
 
 <style>
 
 *{
 box-sizing:border-box;
-margin:0;
-padding:0;
 }
 
 body{
+margin:0;
 font-family:Arial,Helvetica,sans-serif;
-background:#f3f6fb;
+background:#f4f7fb;
 color:#172033;
-line-height:1.55;
 }
 
 header{
-background:linear-gradient(135deg,#172554,#2563eb);
+background:linear-gradient(135deg,#173b7a,#2563eb);
 color:white;
+padding:20px 15px;
 text-align:center;
-padding:18px 14px 26px;
 }
 
-.logo{
-font-size:25px;
-font-weight:800;
+header h1{
+margin:0;
+font-size:24px;
 }
 
-.tagline{
-font-size:13px;
+header p{
+margin:6px 0 0;
 opacity:.9;
 }
 
-.topbar{
-max-width:1050px;
-margin:12px auto 0;
-padding:0 12px;
-display:flex;
-justify-content:flex-end;
-gap:8px;
-}
-
-.small-btn{
-border:0;
-border-radius:9px;
-padding:8px 11px;
-cursor:pointer;
-font-weight:700;
-background:white;
-color:#172033;
+.container{
+max-width:950px;
+margin:auto;
+padding:15px;
 }
 
 .hero{
-max-width:1050px;
-margin:auto;
-padding:25px 14px 15px;
-text-align:center;
-}
-
-.hero h1{
-font-size:30px;
-margin-bottom:8px;
-}
-
-.hero p{
-color:#526074;
-}
-
-.tools{
-max-width:1050px;
-margin:10px auto;
-padding:0 12px;
-}
-
-.search{
-width:100%;
-padding:14px;
-border:1px solid #d8e0ea;
-border-radius:12px;
-font-size:16px;
 background:white;
-margin-bottom:10px;
+border-radius:16px;
+padding:20px;
+margin-top:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
-.toolbar{
-display:flex;
-gap:8px;
-flex-wrap:wrap;
+.hero h2{
+margin-top:0;
 }
 
+.controls{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin-top:15px;
+}
+
+input,
 select,
-.btn{
-font:inherit;
-}
-
-select{
-flex:1;
-min-width:170px;
+button{
+width:100%;
 padding:12px;
-border:1px solid #d8e0ea;
 border-radius:10px;
-background:white;
+border:1px solid #ccd4e0;
+font-size:15px;
 }
 
-.btn{
-border:0;
-border-radius:10px;
-padding:12px 15px;
+button{
 background:#2563eb;
 color:white;
-font-weight:700;
+border:none;
+font-weight:bold;
 cursor:pointer;
 }
 
-.btn.secondary{
-background:#e5e7eb;
-color:#172033;
+button:hover{
+opacity:.9;
 }
 
-.btn.green{
-background:#16a34a;
+button.secondary{
+background:#475569;
 }
 
-.card{
-max-width:1050px;
-margin:18px auto;
-padding:20px;
-background:white;
-border-radius:18px;
-box-shadow:0 5px 22px rgba(0,0,0,.07);
+button.green{
+background:#16803c;
+}
+
+button.orange{
+background:#d97706;
+}
+
+button.red{
+background:#dc2626;
+}
+
+.actions{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+margin-top:12px;
+}
+
+.status{
+margin-top:15px;
+padding:12px;
+border-radius:10px;
+font-weight:bold;
+background:#ecfdf5;
+color:#166534;
+border:1px solid #86efac;
+}
+
+.status.error{
+background:#fef2f2;
+color:#991b1b;
+border-color:#fca5a5;
+}
+
+.status.warning{
+background:#fffbeb;
+color:#92400e;
+border-color:#fcd34d;
 }
 
 .stats{
 display:grid;
 grid-template-columns:repeat(5,1fr);
 gap:8px;
+margin-top:15px;
 }
 
 .stat{
-background:#f7f9fc;
-padding:10px 5px;
+background:#f8fafc;
+border:1px solid #e2e8f0;
+padding:12px 5px;
 border-radius:10px;
 text-align:center;
 }
 
-.stat span{
-display:block;
-font-size:12px;
-color:#64748b;
-}
-
 .stat strong{
-font-size:19px;
-color:#1d4ed8;
+display:block;
+font-size:20px;
+color:#2563eb;
 }
 
 .timer{
 text-align:center;
-font-weight:800;
-font-size:20px;
-margin:14px 0;
-color:#b91c1c;
+font-size:28px;
+font-weight:bold;
+margin:15px 0;
+color:#dc2626;
 }
 
 .progress{
-height:8px;
-background:#e5e7eb;
+height:9px;
+background:#e2e8f0;
 border-radius:20px;
 overflow:hidden;
-margin-bottom:18px;
 }
 
 .progress-bar{
 height:100%;
-width:0;
+width:0%;
 background:#2563eb;
-transition:.2s;
+transition:.3s;
 }
 
-.meta{
-display:flex;
-justify-content:space-between;
-gap:8px;
-flex-wrap:wrap;
-font-size:13px;
-font-weight:700;
+.quiz{
+background:white;
+border-radius:16px;
+padding:20px;
+margin-top:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
 .badge{
-background:#e0ecff;
-color:#1d4ed8;
-padding:5px 10px;
+display:inline-block;
+padding:6px 10px;
 border-radius:20px;
+background:#dbeafe;
+color:#1d4ed8;
+font-size:13px;
+font-weight:bold;
+}
+
+.question-number{
+margin-top:10px;
+font-size:14px;
+color:#64748b;
 }
 
 .question{
-font-size:20px;
-font-weight:700;
+font-size:21px;
+font-weight:bold;
+line-height:1.5;
 margin:15px 0;
 }
 
 .option{
 display:block;
 width:100%;
-padding:13px;
-margin:8px 0;
-border:2px solid #e5e7eb;
-background:white;
-border-radius:11px;
 text-align:left;
-font-size:16px;
-cursor:pointer;
+background:#f8fafc;
+color:#172033;
+border:1px solid #dbe2ea;
+margin:9px 0;
+font-weight:normal;
 }
 
 .option:hover{
-border-color:#2563eb;
-background:#f5f9ff;
+background:#eff6ff;
 }
 
 .option.correct{
-border-color:#16a34a;
-background:#ecfdf5;
+background:#dcfce7;
+border-color:#22c55e;
 color:#166534;
 }
 
 .option.wrong{
-border-color:#dc2626;
-background:#fef2f2;
+background:#fee2e2;
+border-color:#ef4444;
 color:#991b1b;
 }
 
 .option:disabled{
-cursor:default;
+cursor:not-allowed;
+opacity:1;
 }
 
 .explanation{
 display:none;
 margin-top:15px;
 padding:14px;
-background:#f8fafc;
+border-radius:10px;
+background:#eff6ff;
 border-left:4px solid #2563eb;
-border-radius:8px;
+line-height:1.5;
 }
 
-.actions{
-display:flex;
-gap:9px;
-margin-top:18px;
-}
-
-.actions button{
-flex:1;
+.nav{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin-top:15px;
 }
 
 .question-grid{
 display:grid;
 grid-template-columns:repeat(10,1fr);
 gap:6px;
-margin-top:18px;
+margin-top:15px;
 }
 
 .qnum{
-padding:7px 2px;
-border:1px solid #d7dee8;
-background:white;
-border-radius:7px;
-cursor:pointer;
+padding:8px 2px;
 font-size:12px;
+background:#e2e8f0;
+color:#172033;
 }
 
 .qnum.current{
@@ -294,154 +278,87 @@ background:#2563eb;
 color:white;
 }
 
-.qnum.done{
-background:#dcfce7;
-color:#166534;
+.qnum.correct{
+background:#16a34a;
+color:white;
+}
+
+.qnum.wrong{
+background:#dc2626;
+color:white;
 }
 
 .result{
 display:none;
+background:white;
+border-radius:16px;
+padding:25px;
+margin-top:15px;
 text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
-.big-score{
-font-size:50px;
-font-weight:900;
+.result h2{
 color:#2563eb;
-margin:10px;
-}
-
-.result-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:10px;
-margin:18px 0;
-}
-
-.result-box{
-background:#f8fafc;
-padding:15px;
-border-radius:12px;
-}
-
-.result-box strong{
-display:block;
-font-size:25px;
-color:#1d4ed8;
 }
 
 .daily{
-max-width:1050px;
-margin:20px auto;
-padding:0 12px;
-}
-
-.daily-card{
 background:white;
-padding:20px;
 border-radius:16px;
-box-shadow:0 4px 15px rgba(0,0,0,.05);
-}
-
-.daily-card h2{
-color:#172554;
-margin-bottom:8px;
+padding:20px;
+margin-top:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
 .daily-question{
 font-size:18px;
-font-weight:700;
-margin:12px 0;
-}
-
-.daily-answer{
-display:none;
-padding:12px;
-background:#ecfdf5;
-border-radius:9px;
-color:#166534;
+font-weight:bold;
+line-height:1.5;
 }
 
 .info{
-max-width:1050px;
-margin:20px auto;
-padding:0 12px;
-}
-
-.info-card{
 background:white;
-padding:22px;
 border-radius:16px;
-}
-
-.info-card h2{
-color:#172554;
-margin-bottom:8px;
-}
-
-.info-card h3{
-margin-top:18px;
-margin-bottom:5px;
-}
-
-.info-card p{
-color:#4b5563;
-margin-bottom:10px;
+padding:20px;
+margin-top:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+line-height:1.6;
 }
 
 footer{
-background:#111827;
-color:#d1d5db;
 text-align:center;
-padding:25px 14px;
-margin-top:25px;
-font-size:13px;
+padding:25px 15px;
+color:#64748b;
 }
 
 .hidden{
-display:none!important;
+display:none;
 }
 
 @media(max-width:700px){
 
+.controls{
+grid-template-columns:1fr;
+}
+
+.actions{
+grid-template-columns:1fr 1fr;
+}
+
 .stats{
 grid-template-columns:repeat(2,1fr);
-}
-
-.stats .stat:last-child{
-grid-column:span 2;
-}
-
-.hero h1{
-font-size:24px;
-}
-
-.question{
-font-size:18px;
 }
 
 .question-grid{
 grid-template-columns:repeat(8,1fr);
 }
 
-.result-grid{
-grid-template-columns:1fr;
-}
-
-.actions{
-flex-direction:column;
-}
-
-.toolbar{
-flex-direction:column;
-}
-
-select,
-.toolbar .btn{
-width:100%;
+.question{
+font-size:18px;
 }
 
 }
+
 </style>
 </head>
 
@@ -449,242 +366,278 @@ width:100%;
 
 <header>
 
-<div class="logo">
-📚 Study With Deepak Sir
-</div>
+<h1>📚 Study With Deepak Sir</h1>
 
-<div class="tagline">
-Free Competitive Exam Preparation
-</div>
+<p>Free Competitive Exam Preparation</p>
+
+<p>বাংলা / English</p>
 
 </header>
 
-<div class="topbar">
 
-<button class="small-btn" onclick="toggleLanguage()">
-বাংলা / English
-</button>
+<div class="container">
 
-<button class="small-btn" onclick="showDaily()">
-📅 Daily Question
-</button>
 
-</div>
+<!-- HERO -->
 
 <section class="hero">
 
-<h1 id="pageTitle">
-🚆 RRB Group D Practice Questions
-</h1>
+<h2>🚆 RRB Group D Practice Questions</h2>
 
-<p id="pageSubtitle">
+<p>
 Free Maths, Reasoning, General Science and General Awareness practice.
 </p>
 
-</section>
 
-<section class="tools">
+<!-- SEARCH -->
 
 <input
-id="searchBox"
-class="search"
+id="searchInput"
 type="search"
 placeholder="🔎 Search questions..."
-oninput="searchQuestions()"
 >
 
-<div class="toolbar">
+
+<div class="controls">
 
 <select id="subjectSelect">
+
 <option value="All">📚 All Subjects</option>
+
 <option value="Maths">🧮 Maths</option>
+
 <option value="Reasoning">🧠 Reasoning</option>
+
 <option value="Science">🔬 General Science</option>
+
 <option value="General Awareness">🌍 General Awareness</option>
+
 </select>
 
-<select id="setSelect"></select>
 
-<button class="btn" onclick="startRandom()">
+<select id="setSelect">
+
+<option value="all">All Sets</option>
+
+<option value="1">Set 1</option>
+
+<option value="2">Set 2</option>
+
+<option value="3">Set 3</option>
+
+</select>
+
+</div>
+
+
+<div class="actions">
+
+<button onclick="startRandom()">
 🎲 Random Practice
 </button>
 
-<button class="btn green" onclick="startDaily()">
+<button onclick="showDailyQuestion()">
 📅 Daily Question
 </button>
 
-<button class="btn secondary" onclick="toggleTimer()">
+<button
+id="timerButton"
+class="orange"
+onclick="toggleTimer()">
 ⏱ Timer ON
+</button>
+
+<button
+class="secondary"
+onclick="toggleLanguage()">
+বাংলা / English
 </button>
 
 </div>
 
-</section>
 
-<main class="card">
+<!-- QUESTION BANK STATUS -->
+
+<div id="bankStatus" class="status">
+Checking question bank...
+</div>
+
+
+<!-- STATS -->
 
 <div class="stats">
 
 <div class="stat">
-<span>Questions</span>
-<strong id="totalStat">0</strong>
+<strong id="totalQuestions">0</strong>
+Questions
 </div>
 
 <div class="stat">
-<span>Attempted</span>
-<strong id="attemptedStat">0</strong>
+<strong id="attempted">0</strong>
+Attempted
 </div>
 
 <div class="stat">
-<span>Correct</span>
-<strong id="correctStat">0</strong>
+<strong id="correct">0</strong>
+Correct
 </div>
 
 <div class="stat">
-<span>Accuracy</span>
-<strong id="accuracyStat">0%</strong>
+<strong id="accuracy">0%</strong>
+Accuracy
 </div>
 
 <div class="stat">
-<span>Time</span>
-<strong id="timeStat">10:00</strong>
+<strong id="timeUsed">10:00</strong>
+Time
 </div>
 
 </div>
 
-<div class="timer" id="timerDisplay">
+</section>
+
+
+<!-- QUIZ -->
+
+<section class="quiz">
+
+<div class="timer" id="timer">
 ⏱ 10:00
 </div>
 
+
 <div class="progress">
-<div class="progress-bar" id="progressBar"></div>
+
+<div
+id="progressBar"
+class="progress-bar">
 </div>
 
-<div id="quizArea">
+</div>
 
-<div class="meta">
 
-<span class="badge" id="subjectBadge">
+<div style="margin-top:18px;">
+
+<span
+id="subjectBadge"
+class="badge">
 RRB Group D
 </span>
 
-<span id="questionCounter">
-Question
-</span>
-
+<div
+id="questionNumber"
+class="question-number">
+Question 0
 </div>
 
-<div class="question" id="questionText"></div>
+<div
+id="questionText"
+class="question">
+Loading questions...
+</div>
 
 <div id="options"></div>
 
-<div class="explanation" id="explanation"></div>
+<div
+id="explanation"
+class="explanation">
+</div>
 
-<div class="actions">
+</div>
 
-<button class="btn secondary"
+
+<div class="nav">
+
+<button
+class="secondary"
 onclick="previousQuestion()">
 ← Previous
 </button>
 
-<button class="btn"
+<button
 onclick="nextQuestion()">
 Next →
 </button>
 
 </div>
 
-<div class="question-grid" id="questionGrid"></div>
 
+<div
+id="questionGrid"
+class="question-grid">
 </div>
 
-<div class="result" id="resultArea">
+</section>
 
-<h2>🎉 Practice Completed</h2>
 
-<div class="big-score" id="finalScore">
-0%
-</div>
+<!-- RESULT -->
 
-<div class="result-grid">
+<section
+id="result"
+class="result">
 
-<div class="result-box">
-Correct
-<strong id="finalCorrect">0</strong>
-</div>
+<h2>🎉 Practice Complete</h2>
 
-<div class="result-box">
-Wrong
-<strong id="finalWrong">0</strong>
-</div>
+<p id="resultText"></p>
 
-<div class="result-box">
-Accuracy
-<strong id="finalAccuracy">0%</strong>
-</div>
-
-</div>
-
-<p id="resultDetails"></p>
-
-<br>
-
-<button class="btn"
+<button
 onclick="restartQuiz()">
-🔄 Restart
+🔄 Practice Again
 </button>
 
-<button class="btn secondary"
+<button
+class="green"
 onclick="shareResult()">
-📤 Share
+📤 Share Result
 </button>
 
-</div>
+</section>
 
-</main>
 
-<section class="daily" id="dailySection">
+<!-- DAILY -->
 
-<div class="daily-card">
+<section class="daily">
 
-<h2>
-📅 Daily RRB Group D Question
-</h2>
+<h2>📅 Daily RRB Group D Question</h2>
 
 <p>
 Practice one question every day.
 </p>
 
-<div class="daily-question"
-id="dailyQuestion">
+<div
+id="dailyQuestion"
+class="daily-question">
 Loading...
 </div>
 
-<button class="btn"
+<div id="dailyOptions"></div>
+
+<button
+id="dailyAnswerButton"
+class="green"
 onclick="showDailyAnswer()">
 Show Answer
 </button>
 
-<div class="daily-answer"
-id="dailyAnswer">
-</div>
-
+<div
+id="dailyExplanation"
+class="explanation">
 </div>
 
 </section>
 
+
+<!-- INFORMATION -->
+
 <section class="info">
 
-<div class="info-card">
-
-<h2>
-RRB Group D Preparation
-</h2>
+<h2>RRB Group D Preparation</h2>
 
 <p>
-Study With Deepak Sir provides free online practice for
-Railway and other competitive examinations.
+Study With Deepak Sir provides free online practice
+for Railway and other competitive examinations.
 </p>
+
 
 <h3>🧮 Mathematics</h3>
 
@@ -693,6 +646,7 @@ Practise percentage, average, ratio, profit and loss,
 LCM, HCF, speed and distance and other arithmetic topics.
 </p>
 
+
 <h3>🧠 Reasoning</h3>
 
 <p>
@@ -700,903 +654,581 @@ Practise number series, letter series, coding-decoding,
 classification and logical reasoning questions.
 </p>
 
+
 <h3>🔬 General Science</h3>
 
 <p>
 Practise basic Physics, Chemistry and Biology questions.
 </p>
 
+
 <h3>🌍 General Awareness</h3>
 
 <p>
-Practise Indian geography, history, polity, culture and
-general knowledge questions.
+Practise Indian geography, history, polity, culture
+and general knowledge questions.
 </p>
+
 
 <h3>🔎 Search</h3>
 
 <p>
-Use the search box above to find questions containing a
-particular word or topic.
+Use the search box above to find questions containing
+a particular word or topic.
 </p>
-
-</div>
 
 </section>
 
+</div>
+
+
 <footer>
 
-<p>
 © 2026 Study With Deepak Sir
-</p>
 
-<p>
+<br>
+
 RRB Group D Practice • Learn • Practise • Improve
-</p>
 
 </footer>
 
-<script src="questions.js"></script>
+
+
+<!-- =====================================================
+     QUESTION BANK
+     IMPORTANT:
+     questions.js MUST BE IN THE SAME FOLDER
+     AS THIS index.html
+===================================================== -->
+
+<script
+src="./questions.js"
+onerror="questionFileError()">
+</script>
+
 
 <script>
 
-/* =========================================
-   V4 PART 1 QUIZ ENGINE
-========================================= */
+/* =====================================================
+   GLOBAL VARIABLES
+===================================================== */
 
-const ALL_QUESTIONS =
-Array.isArray(window.RRB_QUESTIONS)
-? window.RRB_QUESTIONS
-: [];
+let ALL_QUESTIONS = [];
 
 let currentQuestions = [];
 
 let currentIndex = 0;
 
-let answers = [];
+let attempted = 0;
+
+let correct = 0;
+
+let answered = [];
 
 let timerEnabled = true;
 
-let secondsLeft = 600;
+let timeLeft = 600;
 
 let timerInterval = null;
 
-let randomMode = false;
-
 let dailyQuestion = null;
 
-
-/* =========================================
-   ELEMENTS
-========================================= */
-
-const subjectSelect =
-document.getElementById("subjectSelect");
-
-const setSelect =
-document.getElementById("setSelect");
-
-const searchBox =
-document.getElementById("searchBox");
+let language = "en";
 
 
-/* =========================================
-   SETS
-========================================= */
+/* =====================================================
+   CHECK QUESTION BANK
+===================================================== */
 
-function populateSets(){
+function checkQuestionBank(){
 
-const subject =
-subjectSelect.value;
+    if(
+        typeof window.RRB_QUESTIONS === "undefined"
+    ){
 
-const filtered =
-subject==="All"
-?ALL_QUESTIONS
-:ALL_QUESTIONS.filter(
-q=>q.subject===subject
-);
+        showBankError(
+            "❌ questions.js was not loaded."
+        );
 
-const sets =
-[
-...new Set(
-filtered.map(q=>Number(q.set||1))
-)
-].sort((a,b)=>a-b);
+        return false;
+    }
 
-setSelect.innerHTML="";
 
-sets.forEach(set=>{
+    if(
+        !Array.isArray(window.RRB_QUESTIONS)
+    ){
 
-const option =
-document.createElement("option");
+        showBankError(
+            "❌ RRB_QUESTIONS is not an array."
+        );
 
-option.value=set;
+        return false;
+    }
 
-option.textContent=
-"Practice Set "+set;
 
-setSelect.appendChild(option);
+    ALL_QUESTIONS =
+        window.RRB_QUESTIONS;
 
-});
+
+    if(ALL_QUESTIONS.length === 0){
+
+        showBankError(
+            "❌ Question bank is empty."
+        );
+
+        return false;
+    }
+
+
+    document
+        .getElementById("bankStatus")
+        .className = "status";
+
+
+    document
+        .getElementById("bankStatus")
+        .innerHTML =
+        "✅ Question bank loaded: <strong>"
+        + ALL_QUESTIONS.length
+        + "</strong> questions";
+
+
+    document
+        .getElementById("totalQuestions")
+        .textContent =
+        ALL_QUESTIONS.length;
+
+
+    return true;
+}
+
+
+/* =====================================================
+   SCRIPT LOAD ERROR
+===================================================== */
+
+function questionFileError(){
+
+    showBankError(
+        "❌ ERROR: questions.js could not be loaded."
+    );
 
 }
 
 
-/* =========================================
-   URL SUPPORT
-========================================= */
+/* =====================================================
+   DISPLAY ERROR
+===================================================== */
 
-function loadURL(){
+function showBankError(message){
 
-const params =
-new URLSearchParams(location.search);
+    const box =
+        document.getElementById("bankStatus");
 
-const subject =
-params.get("subject");
+    box.className =
+        "status error";
 
-const set =
-params.get("set");
+    box.innerHTML =
+        message
+        +
+        "<br><br>"
+        +
+        "Check that <strong>questions.js</strong> "
+        +
+        "is in the same folder as "
+        +
+        "<strong>index.html</strong>.";
 
-if(subject){
-
-const valid =
-[...subjectSelect.options]
-.some(o=>o.value===subject);
-
-if(valid){
-
-subjectSelect.value=subject;
-
-}
-
-}
-
-populateSets();
-
-if(set){
-
-const valid =
-[...setSelect.options]
-.some(o=>o.value===set);
-
-if(valid){
-
-setSelect.value=set;
-
-}
-
-}
+    document
+        .getElementById("questionText")
+        .textContent =
+        "Question bank unavailable.";
 
 }
 
 
-/* =========================================
-   SEO
-========================================= */
+/* =====================================================
+   GET FILTERED QUESTIONS
+===================================================== */
 
-function updateSEO(){
+function getFilteredQuestions(){
 
-const subject =
-subjectSelect.value;
+    if(!checkQuestionBank()){
 
-const set =
-setSelect.value;
-
-let title =
-"RRB Group D Practice Questions 2026 | Study With Deepak Sir";
-
-let heading =
-"🚆 RRB Group D Practice Questions";
-
-if(subject!=="All"){
-
-title =
-`RRB Group D ${subject} Practice Set ${set} | Study With Deepak Sir`;
-
-heading =
-`🚆 RRB Group D ${subject} Practice Set ${set}`;
-
-}
-
-document.title=title;
-
-document.getElementById("pageTitle")
-.textContent=heading;
-
-document.getElementById("pageSubtitle")
-.textContent=
-subject==="All"
-?"Free RRB Group D practice questions, mock tests and daily questions."
-:`Free ${subject} practice questions with answers and explanations.`;
-
-}
+        return [];
+    }
 
 
-/* =========================================
-   BUILD SET
-========================================= */
-
-function buildSet(){
-
-randomMode=false;
-
-const subject =
-subjectSelect.value;
-
-const set =
-Number(setSelect.value);
-
-currentQuestions =
-ALL_QUESTIONS.filter(q=>
-(subject==="All" || q.subject===subject)
-&&
-Number(q.set||1)===set
-);
-
-startQuiz();
-
-updateSEO();
-
-}
+    const subject =
+        document
+        .getElementById("subjectSelect")
+        .value;
 
 
-/* =========================================
-   RANDOM
-========================================= */
+    const set =
+        document
+        .getElementById("setSelect")
+        .value;
 
-function startRandom(){
 
-const subject =
-subjectSelect.value;
+    const search =
+        document
+        .getElementById("searchInput")
+        .value
+        .trim()
+        .toLowerCase();
 
-const pool =
-ALL_QUESTIONS.filter(q=>
-subject==="All" ||
-q.subject===subject
-);
 
-currentQuestions =
-[...pool].sort(
-()=>Math.random()-.5
-);
+    return ALL_QUESTIONS.filter(function(q){
 
-randomMode=true;
+        if(
+            subject !== "All"
+            &&
+            q.subject !== subject
+        ){
+            return false;
+        }
 
-startQuiz();
+
+        if(
+            set !== "all"
+            &&
+            String(q.set) !== String(set)
+        ){
+            return false;
+        }
+
+
+        if(search){
+
+            const text =
+                (
+                    q.question
+                    +
+                    " "
+                    +
+                    (q.explanation || "")
+                    +
+                    " "
+                    +
+                    q.subject
+                )
+                .toLowerCase();
+
+
+            if(!text.includes(search)){
+
+                return false;
+            }
+
+        }
+
+
+        return true;
+
+    });
 
 }
 
 
-/* =========================================
-   START
-========================================= */
+/* =====================================================
+   START NORMAL QUIZ
+===================================================== */
 
-function startQuiz(){
+function startQuiz(list){
 
-clearInterval(timerInterval);
+    if(!list || list.length === 0){
 
-currentIndex=0;
+        currentQuestions = [];
 
-answers =
-new Array(currentQuestions.length)
-.fill(null);
-
-secondsLeft=600;
-
-document.getElementById("quizArea")
-.style.display="block";
-
-document.getElementById("resultArea")
-.style.display="none";
-
-document.getElementById("totalStat")
-.textContent=currentQuestions.length;
-
-if(timerEnabled){
-
-startTimer();
-
-}else{
-
-document.getElementById("timerDisplay")
-.textContent="⏱ Timer OFF";
-
-}
-
-renderQuestion();
-
-saveProgress();
-
-}
+        document
+            .getElementById("totalQuestions")
+            .textContent = "0";
 
 
-/* =========================================
-   TIMER
-========================================= */
+        document
+            .getElementById("questionText")
+            .textContent =
+            "No questions found for this selection.";
 
-function startTimer(){
 
-clearInterval(timerInterval);
+        document
+            .getElementById("options")
+            .innerHTML = "";
 
-updateTimer();
 
-timerInterval =
-setInterval(()=>{
+        return;
+    }
 
-secondsLeft--;
 
-updateTimer();
+    currentQuestions = list;
 
-if(secondsLeft<=0){
+    currentIndex = 0;
 
-clearInterval(timerInterval);
+    attempted = 0;
 
-finishQuiz(true);
+    correct = 0;
 
-}
+    answered = new Array(
+        currentQuestions.length
+    ).fill(null);
 
-},1000);
 
-}
+    timeLeft = 600;
 
-function updateTimer(){
+    clearInterval(timerInterval);
 
-const minutes =
-Math.floor(secondsLeft/60);
 
-const seconds =
-secondsLeft%60;
+    document
+        .getElementById("result")
+        .style.display = "none";
 
-const value =
-String(minutes).padStart(2,"0")
-+
-":"
-+
-String(seconds).padStart(2,"0");
 
-document.getElementById("timerDisplay")
-.textContent="⏱ "+value;
+    if(timerEnabled){
 
-document.getElementById("timeStat")
-.textContent=value;
+        startTimer();
+
+    }else{
+
+        updateTimerDisplay();
+
+    }
+
+
+    updateStats();
+
+    renderQuestion();
 
 }
 
 
-/* =========================================
+/* =====================================================
+   BUILD QUIZ
+===================================================== */
+
+function buildQuiz(){
+
+    const list =
+        getFilteredQuestions();
+
+
+    startQuiz(list);
+
+}
+
+
+/* =====================================================
    RENDER QUESTION
-========================================= */
+===================================================== */
 
 function renderQuestion(){
 
-if(!currentQuestions.length){
+    if(
+        !currentQuestions.length
+    ){
+        return;
+    }
 
-document.getElementById("questionText")
-.textContent=
-"No questions found.";
 
-return;
+    const q =
+        currentQuestions[currentIndex];
 
-}
 
-const q =
-currentQuestions[currentIndex];
+    document
+        .getElementById("subjectBadge")
+        .textContent =
+        q.subject;
 
-const saved =
-answers[currentIndex];
 
-document.getElementById("questionCounter")
-.textContent=
-`Question ${currentIndex+1} of ${currentQuestions.length}`;
+    document
+        .getElementById("questionNumber")
+        .textContent =
+        "Question "
+        +
+        (currentIndex + 1)
+        +
+        " of "
+        +
+        currentQuestions.length;
 
-document.getElementById("subjectBadge")
-.textContent=q.subject;
 
-document.getElementById("questionText")
-.textContent=q.question;
+    document
+        .getElementById("questionText")
+        .textContent =
+        q.question;
 
-document.getElementById("progressBar")
-.style.width=
-((currentIndex+1)/
-currentQuestions.length*100)+"%";
 
-const options =
-document.getElementById("options");
+    const optionsBox =
+        document
+        .getElementById("options");
 
-options.innerHTML="";
 
-q.options.forEach((option,index)=>{
+    optionsBox.innerHTML = "";
 
-const button =
-document.createElement("button");
 
-button.className="option";
+    q.options.forEach(
+        function(option,index){
 
-button.textContent=
-String.fromCharCode(65+index)
-+". "
-+option;
+            const button =
+                document.createElement("button");
 
-button.onclick=()=>{
-answerQuestion(index);
-};
 
-if(saved!==null){
+            button.className =
+                "option";
 
-button.disabled=true;
 
-if(index===q.answer){
+            button.textContent =
+                String.fromCharCode(65 + index)
+                +
+                ". "
+                +
+                option;
 
-button.classList.add("correct");
 
-}
+            button.onclick =
+                function(){
 
-if(
-index===saved &&
-saved!==q.answer
-){
+                    answerQuestion(index);
+                };
 
-button.classList.add("wrong");
 
-}
+            optionsBox.appendChild(button);
 
-}
+        }
+    );
 
-options.appendChild(button);
 
-});
+    document
+        .getElementById("explanation")
+        .style.display =
+        "none";
 
-const explanation =
-document.getElementById("explanation");
 
-if(saved!==null){
+    document
+        .getElementById("explanation")
+        .textContent =
+        "";
 
-explanation.innerHTML=
-"<strong>Explanation:</strong> "
-+q.explanation;
 
-explanation.style.display="block";
+    updateProgress();
 
-}else{
-
-explanation.style.display="none";
-
-}
-
-updateStats();
-
-renderGrid();
-
-saveProgress();
+    renderGrid();
 
 }
 
 
-/* =========================================
-   ANSWER
-========================================= */
+/* =====================================================
+   ANSWER QUESTION
+===================================================== */
 
-function answerQuestion(index){
+function answerQuestion(selected){
 
-if(answers[currentIndex]!==null){
+    const q =
+        currentQuestions[currentIndex];
 
-return;
+
+    if(answered[currentIndex] !== null){
+
+        return;
+    }
+
+
+    answered[currentIndex] =
+        selected;
+
+
+    attempted++;
+
+
+    if(selected === q.answer){
+
+        correct++;
+
+    }
+
+
+    const buttons =
+        document
+        .querySelectorAll(
+            "#options .option"
+        );
+
+
+    buttons.forEach(
+        function(button,index){
+
+            button.disabled = true;
+
+
+            if(index === q.answer){
+
+                button.classList.add(
+                    "correct"
+                );
+
+            }
+
+
+            if(
+                index === selected
+                &&
+                selected !== q.answer
+            ){
+
+                button.classList.add(
+                    "wrong"
+                );
+
+            }
+
+        }
+    );
+
+
+    const explanation =
+        document
+        .getElementById("explanation");
+
+
+    explanation.style.display =
+        "block";
+
+
+    explanation.textContent =
+        "Explanation: "
+        +
+        (
+            q.explanation
+            ||
+            "No explanation available."
+        );
+
+
+    updateStats();
+
+    renderGrid();
 
 }
 
-answers[currentIndex]=index;
 
-renderQuestion();
-
-}
-
-
-/* =========================================
+/* =====================================================
    NEXT
-========================================= */
+===================================================== */
 
 function nextQuestion(){
 
-if(
-answers[currentIndex]===null
-){
+    if(!currentQuestions.length){
 
-alert(
-"Please select an answer first."
-);
+        return;
+    }
 
-return;
 
-}
+    if(
+        currentIndex
+        <
+        currentQuestions.length - 1
+    ){
 
-if(
-currentIndex===
-currentQuestions.length-1
-){
+        currentIndex++;
 
-finishQuiz(false);
-
-return;
-
-}
-
-currentIndex++;
-
-renderQuestion();
-
-}
-
-
-/* =========================================
-   PREVIOUS
-========================================= */
-
-function previousQuestion(){
-
-if(currentIndex>0){
-
-currentIndex--;
-
-renderQuestion();
-
-}
-
-}
-
-
-/* =========================================
-   QUESTION GRID
-========================================= */
-
-function renderGrid(){
-
-const grid =
-document.getElementById("questionGrid");
-
-grid.innerHTML="";
-
-currentQuestions.forEach((q,index)=>{
-
-const button =
-document.createElement("button");
-
-button.className="qnum";
-
-button.textContent=index+1;
-
-if(index===currentIndex){
-
-button.classList.add("current");
-
-}
-
-if(answers[index]!==null){
-
-button.classList.add("done");
-
-}
-
-button.onclick=()=>{
-
-currentIndex=index;
-
-renderQuestion();
-
-};
-
-grid.appendChild(button);
-
-});
-
-}
-
-
-/* =========================================
-   STATS
-========================================= */
-
-function updateStats(){
-
-const attempted =
-answers.filter(
-a=>a!==null
-).length;
-
-const correct =
-answers.reduce(
-(total,a,index)=>
-total+
-(
-a!==null &&
-a===currentQuestions[index].answer
-?1:0
-),
-0
-);
-
-const accuracy =
-attempted
-?Math.round(correct/attempted*100)
-:0;
-
-document.getElementById("attemptedStat")
-.textContent=attempted;
-
-document.getElementById("correctStat")
-.textContent=correct;
-
-document.getElementById("accuracyStat")
-.textContent=
-accuracy+"%";
-
-}
-
-
-/* =========================================
-   FINISH
-========================================= */
-
-function finishQuiz(timeUp){
-
-clearInterval(timerInterval);
-
-const correct =
-answers.reduce(
-(total,a,index)=>
-total+
-(
-a!==null &&
-a===currentQuestions[index].answer
-?1:0
-),
-0
-);
-
-const attempted =
-answers.filter(
-a=>a!==null
-).length;
-
-const wrong =
-attempted-correct;
-
-const accuracy =
-attempted
-?Math.round(correct/attempted*100)
-:0;
-
-const percentage =
-currentQuestions.length
-?Math.round(
-correct/currentQuestions.length*100
-)
-:0;
-
-document.getElementById("quizArea")
-.style.display="none";
-
-document.getElementById("resultArea")
-.style.display="block";
-
-document.getElementById("finalScore")
-.textContent=
-percentage+"%";
-
-document.getElementById("finalCorrect")
-.textContent=correct;
-
-document.getElementById("finalWrong")
-.textContent=wrong;
-
-document.getElementById("finalAccuracy")
-.textContent=
-accuracy+"%";
-
-document.getElementById("resultDetails")
-.textContent=
-timeUp
-?`Time ended. You attempted ${attempted} of ${currentQuestions.length} questions.`
-:`You attempted ${attempted} of ${currentQuestions.length} questions.`;
-
-}
-
-
-/* =========================================
-   TIMER TOGGLE
-========================================= */
-
-function toggleTimer(){
-
-timerEnabled=!timerEnabled;
-
-const button =
-document.querySelector(
-'.toolbar .btn.secondary'
-);
-
-button.textContent =
-timerEnabled
-?"⏱ Timer ON"
-:"⏱ Timer OFF";
-
-if(timerEnabled){
-
-secondsLeft=600;
-
-startTimer();
-
-}else{
-
-clearInterval(timerInterval);
-
-document.getElementById("timerDisplay")
-.textContent="⏱ Timer OFF";
-
-}
-
-}
-
-
-/* =========================================
-   SEARCH
-========================================= */
-
-function searchQuestions(){
-
-const term =
-searchBox.value
-.trim()
-.toLowerCase();
-
-if(!term){
-
-buildSet();
-
-return;
-
-}
-
-const subject =
-subjectSelect.value;
-
-const set =
-Number(setSelect.value);
-
-currentQuestions =
-ALL_QUESTIONS.filter(q=>
-
-(subject==="All" ||
-q.subject===subject)
-
-&&
-
-Number(q.set||1)===set
-
-&&
-
-(
-q.question.toLowerCase()
-.includes(term)
-
-||
-
-q.explanation
-.toLowerCase()
-.includes(term)
-
-)
-
-);
-
-randomMode=false;
-
-startQuiz();
-
-}
-
-
-/* =========================================
-   DAILY QUESTION
-========================================= */
-
-function getDailyQuestion(){
-
-if(!ALL_QUESTIONS.length)
-return null;
-
-const today =
-new Date();
-
-const key =
-today.getFullYear()*10000
-+
-(today.getMonth()+1)*100
-+
-today.getDate();
-
-const index =
-key % ALL_QUESTIONS.length;
-
-return ALL_QUESTIONS[index];
-
-}
-
-function showDaily(){
-
-document.getElementById("dailySection")
-.scrollIntoView({
-behavior:"smooth"
-});
-
-}
-
-function loadDaily(){
-
-dailyQuestion=
-getDailyQuestion();
-
-if(!dailyQuestion){
-
-return;
-
-}
-
-document.getElementById("dailyQuestion")
-.textContent=
-dailyQuestion.question;
-
-document.getElementById("dailyAnswer")
-.innerHTML=
-"<strong>Answer:</strong> "
-+
-dailyQuestion.options[
-dailyQuestion.answer
-]
-+
-"<br><br>"
-+
-"<strong>Explanation:</strong> "
-+
-dailyQuestion.explanation;
-
-}
-
-function showDailyAnswer(){
-
-document.getElementById("dailyAnswer")
-.style.display="block";
-
-}
-
-function startDaily(){
-
-if(!dailyQuestion)
-loadDaily();
-
-currentQuestions=[dailyQuestion];
-
-startQuiz();
-
-}
-
-
-/* =========================================
-   LANGUAGE
-========================================= */
-
-function toggleLanguage(){
-
-const current =
-document.documentElement.lang;
-
-if(current==="en"){
-
-document.documentElement.lang="bn";
-
-document.getElementById("pageTitle")
-.textContent=
-"🚆 RRB Group D অনুশীলনী প্রশ্ন";
-
-document.getElementById("pageSubtitle")
-.textContent=
-"গণিত,
+       
